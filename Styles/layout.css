@@ -1,0 +1,79 @@
+/* ======================= */
+/*    Dynamic Layout       */
+/* ======================= */
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: calc(
+    var(--footer-height, 0px)
+  ); /* Reserve dynamic footer space */
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+header {
+  border: 1px solid green;
+  padding: var(--md-space);
+
+  /* position: sticky; */
+  /* top: 0; */
+
+  width: 100%; /* Full-width header */
+}
+
+main {
+  flex: 1; /* Grow to fill available space */
+  overflow-y: auto; /* Scroll if content overflows */
+
+  border: 1px solid orange;
+  padding: var(--md-space);
+
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+main section {
+  border: 1px solid black;
+  padding: var(--sm-space);
+  margin-bottom: var(--lg-space);
+}
+
+footer {
+  border: 1px solid blue;
+  padding: var(--md-space);
+
+  /* position: sticky; */
+  /* bottom: 0; */
+
+  width: 100%; /* Full-width footer */
+}
+
+.wrapper::after {
+  content: "";
+  height: var(--footer-height, 0px);
+  display: block;
+  flex-shrink: 0;
+}
+/* header {
+    border: 1px solid green;
+    padding: var(--md-space);
+  } */
+
+/* main {
+  border: 1px solid orange;
+  padding: var(--md-space);
+} */
+
+/* footer {
+  border: 1px solid blue;
+  padding: var(--md-space);
+} */

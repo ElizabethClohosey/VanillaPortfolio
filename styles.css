@@ -1,3 +1,47 @@
+@import "./Styles/normalize.css";
+@import "./Styles/layout.css";
+@import "./Styles/projects.css";
+
+:root {
+  /* Theme  */
+  --brandPrimary: #123456;
+  --brandSecondary: #7b8e9e;
+
+  /* Spacing  */
+  --xs-space: 0.15rem;
+  --sm-space: 0.25rem;
+  --md-space: 0.5rem;
+  --lg-space: 1rem;
+  --xl-space: 3rem;
+}
+
 body {
-  background: gray;
+  background: var(--brandSecondary);
+}
+
+header > .options-bar {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+}
+
+div.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+div.social-icons .icon {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#click-me-btn {
+  /* text-align: center; */
+  display: block;
+  margin: auto;
 }
