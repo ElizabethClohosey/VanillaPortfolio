@@ -23,7 +23,13 @@ header > .options-bar {
   display: flex;
   justify-content: space-between;
   height: auto;
-  align-items: center;
+  align-items: start;
+  /* align-items: center; */
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
 div.social-icons {
@@ -34,7 +40,7 @@ div.social-icons {
 div.social-icons .icon {
   height: 25px;
   width: 25px;
-  background-color: red;
+  background-color: rgb(24, 19, 71);
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
