@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Elizabeth Clohosey Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/2b980c3f10.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
@@ -14,12 +18,25 @@
           <p>Self Motivaed Fullstack Software Developer</p>
           <div class="social-nav-bar">
             <div class="social-icons">
-              <span class="icon"></span>
-              <span class="icon"></span>
-              <span class="icon"></span>
+              <a
+                href="https://www.linkedin.com/in/elizabethclohosey"
+                target="_blank"
+                ><i class="fab fa-brands fa-linkedin fa-2x"></i
+              ></a>
+              <a
+                class="icon-btn"
+                href="https://www.github.com/ElizabethClohosey"
+                target="_blank"
+                ><i class="fab fa-brands fa-github fa-2x"></i
+              ></a>
+              <a href="./resume.pdf" target="_blank"
+                ><i class="fas fa-solid fa-file-pdf fa-2x"></i
+              ></a>
             </div>
             <nav id="nav">
-              <button id="toggle-nav">Navigation</button>
+              <button id="toggle-nav">
+                <i class="fas fa-solid fa-bars fa-2x"></i>
+              </button>
               <div id="nav-menu" class="hidden">
                 <a class="scroll-link" href="#skills">Skills</a>
                 <a class="scroll-link" href="#projects">Projects</a>
@@ -27,6 +44,7 @@
               </div>
             </nav>
           </div>
+          <br />
           <button id="contact-me-cta">Contact Me</button>
           <br />
         </div>
@@ -38,27 +56,54 @@
             Include "Skills Section" highlighting the technologies I specialize
             in
           </p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Sass</p>
+          <p>Bootstrap</p>
+          <p>Tailwind CSS</p>
+
+          <p>JavaScript</p>
+          <p>Typescript</p>
+          <p>React</p>
+          <p>Redux</p>
+          <p>Next.js</p>
+
+          <p>Node</p>
+          <p>NPM</p>
+          <p>Express</p>
+          <p>Nest.js</p>
+          <p>MongoDB</p>
         </section>
         <section id="projects">
           <h2>Projects</h2>
-          <p>
-            Each project should be accompanied by a clear explanation of what it
-            is, your role in it, and the technologies used. This helps potential
-            employers or clients understand the scope and your contribution.
-          </p>
-          <div class="project">
-            <h3>Project 1</h3>
-            <img src="#" alt="#" height="30" width="25" />
-            <p>Project description will live here</p>
-            <p>Link to project github</p>
-            <p>Link to deployed project</p>
+
+          <div class="project-card">
+            <h3>Project 1 Title</h3>
+            <img src="#" alt="#" />
+            <p>
+              Each project should be accompanied by a clear explanation of what
+              it is, your role in it, and the technologies used. This helps
+              potential employers or clients understand the scope and your
+              contribution.
+            </p>
+            <div class="link-bar">
+              <p>GitHub</p>
+              <p>Project</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>Project 2 Title</h3>
+            <img src="#" alt="#" />
+            <p>
+              Each project should be accompanied by a clear explanation of what
+              it is, your role in it, and the technologies used. This helps
+              potential employers or clients understand the scope and your
+              contribution.
+            </p>
+            <div class="link-bar">
+              <p>GitHub</p>
+              <p>Project</p>
+            </div>
           </div>
         </section>
         <section id="about">
@@ -133,24 +178,6 @@
             </p>
           </section>
         </section>
-        <!-- <section id="contact">
-          <h2>Contact Me</h2>
-          <form
-            action="mailto:your-email@example.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </section> -->
       </main>
       <footer>
         <h1>Footer</h1>

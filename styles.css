@@ -24,11 +24,21 @@ body {
   margin: auto;
 }
 
+.header-content p {
+  margin-top: -10px;
+}
+
 .social-nav-bar {
   display: flex;
   justify-content: space-between;
   height: auto;
   align-items: center;
+  margin-top: var(--sm-space);
+}
+
+#toggle-nav {
+  background: none;
+  border: none;
 }
 
 #nav-menu.hidden {
@@ -46,22 +56,7 @@ body {
   flex-direction: column;
 }
 
-div.social-icons {
-  display: flex;
-  align-items: center;
-}
-
-div.social-icons .icon {
-  height: 25px;
-  width: 25px;
-  background-color: rgb(24, 19, 71);
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#click-me-btn {
-  /* text-align: center; */
-  display: block;
-  margin: auto;
+.social-icons > a {
+  color: var(--brandPrimary);
+  margin-right: 15px;
 }
