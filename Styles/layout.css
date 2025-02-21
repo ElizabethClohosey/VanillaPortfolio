@@ -21,6 +21,7 @@ body {
 
 header {
   border: 1px solid green;
+  background: white;
   padding: var(--md-space);
 
   position: sticky;
