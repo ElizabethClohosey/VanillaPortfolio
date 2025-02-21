@@ -1,7 +1,7 @@
-// const contactMeBtn = document.getElementById("contact-me");
-// contactMeBtn.onclick = function () {
-//   window.location.assign("./contact.html");
-// };
+const contactMeBtn = document.getElementById("contact-me-cta");
+contactMeBtn.onclick = function () {
+  window.location.assign("./contact.html");
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   function scrollToElement(target) {
