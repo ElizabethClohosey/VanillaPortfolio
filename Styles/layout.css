@@ -23,8 +23,8 @@ header {
   border: 1px solid green;
   padding: var(--md-space);
 
-  /* position: sticky; */
-  /* top: 0; */
+  position: sticky;
+  top: 0;
 
   width: 100%; /* Full-width header */
 }
