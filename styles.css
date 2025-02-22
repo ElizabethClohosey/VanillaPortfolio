@@ -20,6 +20,12 @@ body {
   background: var(--brandSecondary);
 }
 
+/* ===================
+
+/* Header 
+
+/* =================== */
+
 .header-content {
   max-width: 1140px;
   margin: auto;
@@ -60,4 +66,19 @@ body {
 .social-icons > a {
   color: var(--brandPrimary);
   margin-right: 15px;
+}
+
+/* ===================
+
+/* SKILLS 
+
+/* =================== */
+
+.skills-1,
+.skills-2 {
+  display: flex;
+  padding: var(--sm-space);
+  justify-content: space-around;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }

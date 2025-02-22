@@ -1,3 +1,16 @@
+.skills-parallax {
+  background-image: url("../assets/images/skills.png");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 250px;
+  background-size: 50%;
+}
+
 .parallax {
   background-image: url("../assets/images/skills.png");
   min-height: 300px;
@@ -10,7 +23,6 @@
 }
 
 .parallax2 {
-  /* background-image: url("./assets/images/LunaTrixLogo_Horizontal.png"); */
   background-image: linear-gradient(red, yellow, blue);
   min-height: 300px;
 
@@ -22,8 +34,8 @@
 }
 
 .parallax3 {
-  background-image: url("../assets/images/LunaTrixLogo_Round.png");
-  /* background-image: linear-gradient(red, yellow, blue); */
+  /* background-image: url("../assets/images/LunaTrixLogo_Round.png"); */
+  background-image: linear-gradient(purple, pink, blue);
   min-height: 300px;
 
   /* Create the parallax scrolling effect */

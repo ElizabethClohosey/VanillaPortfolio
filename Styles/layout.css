@@ -33,19 +33,15 @@ main {
   flex: 1; /* Grow to fill available space */
   overflow-y: auto; /* Scroll if content overflows */
 
-  border: 1px solid orange;
-  padding: var(--md-space);
-
   max-width: 1024px;
   width: 100%;
   margin: auto;
 }
 
-main section {
-  border: 1px solid black;
+/* main section {
   padding: var(--sm-space);
-  /* margin-bottom: var(--lg-space); */
-}
+  margin-bottom: var(--lg-space);
+} */
 
 footer {
   border: 1px solid blue;
@@ -63,17 +59,3 @@ footer {
   display: block;
   flex-shrink: 0;
 }
-/* header {
-    border: 1px solid green;
-    padding: var(--md-space);
-  } */
-
-/* main {
-  border: 1px solid orange;
-  padding: var(--md-space);
-} */
-
-/* footer {
-  border: 1px solid blue;
-  padding: var(--md-space);
-} */
