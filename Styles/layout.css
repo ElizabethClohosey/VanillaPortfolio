@@ -20,7 +20,6 @@ body {
 }
 
 header {
-  border: 1px solid green;
   background: white;
   padding: var(--md-space);
 
@@ -45,7 +44,7 @@ main {
 main section {
   border: 1px solid black;
   padding: var(--sm-space);
-  margin-bottom: var(--lg-space);
+  /* margin-bottom: var(--lg-space); */
 }
 
 footer {

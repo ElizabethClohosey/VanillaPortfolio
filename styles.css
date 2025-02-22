@@ -1,6 +1,7 @@
 @import "./Styles/normalize.css";
 @import "./Styles/layout.css";
 @import "./Styles/projects.css";
+@import "./Styles/common.css";
 
 :root {
   /* Theme  */
