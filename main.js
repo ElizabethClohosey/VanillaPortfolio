@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle main navigation
   const toggleButton = document.getElementById("toggle-nav");
   const navMenu = document.getElementById("nav-menu");
-  if (toggleButton && nav) {
+  if (toggleButton && navMenu) {
     toggleButton.addEventListener("click", () => {
       const isHidden = navMenu.classList.contains("hidden");
       if (isHidden) {
