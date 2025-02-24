@@ -18,6 +18,8 @@
 
 body {
   background: var(--brandSecondary);
+  background: black;
+  color: var(--brandPrimary);
 }
 
 /* ===================

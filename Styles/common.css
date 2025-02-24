@@ -7,13 +7,14 @@
   /* background-position: center; */
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 320px;
-  background-size: 50%;
+  background-position-y: 350px;
+  background-size: 25%;
 }
 
-.parallax2 {
-  background-image: linear-gradient(red, yellow, blue);
-  min-height: 100px;
+.main-parallax {
+  /* background-image: linear-gradient(red, yellow, blue); */
+  background-image: url("../assets//images/Parallax/cosmicCliffs.jpg");
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -22,9 +23,10 @@
   background-size: contain;
 }
 
-.parallax3 {
+.hobbies-parallax {
   /* background-image: url("../assets/images/LunaTrixLogo_Round.png"); */
-  background-image: linear-gradient(purple, pink, blue);
+  /* background-image: linear-gradient(purple, pink, blue); */
+  background-image: url("../assets/images/Parallax/A-vibrant-Aurora-Borealis.jpg");
   min-height: 100px;
 
   /* Create the parallax scrolling effect */
@@ -34,4 +36,14 @@
   background-position-x: center;
   background-position-y: center;
   background-size: contain;
+}
+
+.medical-parallax {
+  background-image: url("../assets/images/Parallax/MRI-black-and-white-monochrome-arm-chest-human-body-illustration-992842-pxhere.com.jpg");
+  min-height: 110px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
