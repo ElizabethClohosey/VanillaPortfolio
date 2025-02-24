@@ -3,6 +3,10 @@
 @import "./Styles/projects.css";
 @import "./Styles/common.css";
 
+/* Animations */
+@import "./Styles/animations/clouds.css";
+@import "./Styles/animations/twinkling-stars.css";
+
 :root {
   /* Theme  */
   --brandPrimary: #123456;
@@ -17,7 +21,9 @@
 }
 
 body {
-  background: var(--brandSecondary);
+  /* background: var(--brandSecondary); */
+  background: black;
+  color: var(--brandPrimary);
 }
 
 /* ===================
