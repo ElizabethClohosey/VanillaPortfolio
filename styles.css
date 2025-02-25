@@ -24,6 +24,9 @@ body {
   background: var(--brandSecondary);
   background: black;
   color: var(--brandPrimary);
+  background: #000 url("./assets/images/animations/stars-2.svg") repeat top
+    center;
+  z-index: 0;
 }
 
 /* ===================
