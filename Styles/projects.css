@@ -2,7 +2,11 @@
   max-width: 250px;
   text-align: center;
   border: 1px solid red;
-  margin: 0 auto var(--lg-space);
+  margin: 0 auto;
+}
+
+.project-card:not(:last-of-type) {
+  margin-bottom: var(--lg-space);
 }
 
 .project-card img {

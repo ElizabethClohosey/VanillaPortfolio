@@ -27,7 +27,7 @@
   /* background-image: url("../assets/images/LunaTrixLogo_Round.png"); */
   /* background-image: linear-gradient(purple, pink, blue); */
   background-image: url("../assets/images/Parallax/A-vibrant-Aurora-Borealis.jpg");
-  min-height: 100px;
+  min-height: 200px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -46,4 +46,25 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .skills-parallax,
+  .main-parallax,
+  .hobbies-parallax,
+  .medical-parallax {
+    background-attachment: scroll; /* Disable parallax */
+    background-position: center; /* Optional: Fine-tune image position */
+    background-size: cover; /* Stretch image to fill */
+    background-repeat: no-repeat; /* Prevent tiling */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skills-parallax,
+  .main-parallax,
+  .hobbies-parallax,
+  .medical-parallax {
+    display: none;
+  }
 }

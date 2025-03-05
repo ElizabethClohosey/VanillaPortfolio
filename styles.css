@@ -21,10 +21,11 @@
 }
 
 body {
-  background: var(--brandSecondary);
   background: black;
-  color: var(--brandPrimary);
-  background: #000 url("./assets/images/animations/stars-2.svg") repeat top
+  color: var(--brandSecondary);
+  /* background: #000 url("./assets/images/animations/stars-2.svg") repeat top
+    center; */
+  background: #000 url("./assets/images/animations/stars-2.png") repeat top
     center;
   z-index: 0;
 }
@@ -35,9 +36,17 @@ body {
 
 /* =================== */
 
-.header-content {
+/* .header-content,
+.footer-content {
   max-width: 1140px;
   margin: auto;
+} */
+
+.header-content,
+.section-content {
+  position: relative;
+  background: black;
+  padding: var(--md-space);
 }
 
 .header-content p {
@@ -50,6 +59,7 @@ body {
   right: var(--md-space);
   background: none;
   border: none;
+  color: var(--brandSecondary);
 }
 
 #contact-me-cta {
