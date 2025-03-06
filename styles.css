@@ -42,11 +42,15 @@ body {
   margin: auto;
 } */
 
-.header-content,
+/* .header-content,
 .section-content {
   position: relative;
   background: black;
   padding: var(--md-space);
+} */
+
+.section-content {
+  background: black;
 }
 
 .header-content p {

@@ -10,8 +10,8 @@
 }
 
 .project-card img {
-  min-height: 100px;
-  min-width: 75px;
+  height: 150px;
+  width: 150px;
   border: 1px solid black;
 }
 
