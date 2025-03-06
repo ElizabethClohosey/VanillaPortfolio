@@ -10,9 +10,22 @@
 
 :root {
   /* Theme  */
-  --brandPrimary: #123456;
-  --brandSecondary: #7b8e9e;
   --brandPrimary: #00ffff;
+  --brandSecondary: #b53da1;
+
+  --peach-light: #ffd4b9;
+  --salmon: #fea7a0;
+  --blush-pink: #fea6cc;
+  --orchid: #ed6ab8;
+  --royal-purple: #642aa5;
+  --midnight-purple: #2a0a56;
+  --electric-indigo: #4321a9;
+  --cosmic-navy: #140655;
+  --dark: #010101;
+  --light: #f5f5f5;
+  --neutral-100: #;
+  --neutral: #;
+  --neutral-300: #;
 
   /* Spacing  */
   --xs-space: 0.15rem;

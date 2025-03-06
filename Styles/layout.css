@@ -13,7 +13,8 @@ body {
   height: 100%;
 
   background: black;
-  color: var(--brandSecondary);
+  /* color: var(--brandSecondary); */
+  color: white;
   background: #000 url("../assets//images/Parallax/unfoldTheUniverse_2.jpg")
     repeat top center;
   z-index: 0;
@@ -31,9 +32,11 @@ header {
   z-index: 99;
   width: 100%; /* Full-width header */
 
-  background: rgb(19, 19, 19);
-  background: #000 url("../assets/images/animations/stars-2.png") repeat top
-    center;
+  /* background: rgb(19, 19, 19); */
+  /* background: #000 url("../assets/images/animations/stars-2.png") repeat top
+    center; */
+
+  background: black;
 }
 
 main {
