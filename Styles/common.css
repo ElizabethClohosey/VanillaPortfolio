@@ -1,17 +1,22 @@
 .main-parallax {
-  /* background-image: url("../assets//images/Parallax/cosmicCliffs.jpg"); */
+  /* background-image: url("../assets//images/Parallax/NGC_3627.jpg"); */
   background-image: url("../assets//images/Parallax/orionNebula.jpg");
   min-height: 300px;
   width: 75%;
+  /* width: 100%; */
   margin: auto;
   border-radius: 2%;
-  box-shadow: 0 0 8px 8px #070604 inset;
+  box-shadow: 0 0 8px 5px #070604 inset;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  /* background-size: contain; */
+
+  /* border-radius: 50%; */
+  /* box-shadow: 0 0 8px 5px #070604; */
 }
 
 .hobbies-parallax {
@@ -28,9 +33,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  /* .main-parallax {
+    background-image: url("../assets//images/Parallax/orionNebula.jpg");
+  } */
   .main-parallax,
   .hobbies-parallax {
-    width: 100%;
     background-attachment: scroll; /* Disable parallax */
     background-position: center; /* Optional: Fine-tune image position */
     background-size: cover; /* Stretch image to fill */

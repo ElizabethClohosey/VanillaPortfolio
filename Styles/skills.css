@@ -13,17 +13,16 @@ img.skills {
 
 .skills-1 > i,
 .skills-2 > i {
-  /* font-size: 10px; */
   font-size: calc(1em + 1vw);
   background: black;
   color: var(--brandPrimary);
-  /* border: 1px solid var(--brandPrimary); */
-  /* box-shadow: 0px 0px 3px var(--brandPrimary); */
-  border-radius: var(--xs-space);
-  height: 60px;
-  width: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px solid var(--brandPrimary);
+  box-shadow: 0px 0px 3px var(--brandPrimary);
+  height: 60px;
+  width: 60px;
 }
