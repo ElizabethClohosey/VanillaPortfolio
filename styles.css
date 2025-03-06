@@ -1,6 +1,7 @@
 @import "./Styles/normalize.css";
 @import "./Styles/layout.css";
 @import "./Styles/projects.css";
+@import "./Styles/skills.css";
 @import "./Styles/common.css";
 
 /* Animations */
@@ -11,6 +12,7 @@
   /* Theme  */
   --brandPrimary: #123456;
   --brandSecondary: #7b8e9e;
+  --brandPrimary: #00ffff;
 
   /* Spacing  */
   --xs-space: 0.15rem;
@@ -18,16 +20,6 @@
   --md-space: 0.5rem;
   --lg-space: 1rem;
   --xl-space: 3rem;
-}
-
-body {
-  background: black;
-  color: var(--brandSecondary);
-  /* background: #000 url("./assets/images/animations/stars-2.svg") repeat top
-    center; */
-  background: #000 url("./assets/images/animations/stars-2.png") repeat top
-    center;
-  z-index: 0;
 }
 
 /* ===================
@@ -49,9 +41,9 @@ body {
   padding: var(--md-space);
 } */
 
-.section-content {
+/* .section-content {
   background: black;
-}
+} */
 
 .header-content p {
   margin-top: -10px;
@@ -87,15 +79,8 @@ body {
 }
 
 .social-icons {
-  /* position: absolute; */
-  /* top: 70px; */
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* justify-content: center; */
-  /* height: auto; */
   width: 20px;
-  /* align-items: center; */
 }
 
 .social-icons > a {
@@ -114,6 +99,6 @@ body {
   display: flex;
   padding: var(--sm-space);
   justify-content: space-around;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  /* border-top: 2px solid red; */
+  /* border-bottom: 2px solid red; */
 }

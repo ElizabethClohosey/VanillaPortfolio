@@ -1,0 +1,13 @@
+.skills-1 > i,
+.skills-2 > i {
+  background: black;
+  box-shadow: 0px 0px 3px #00ffff;
+  padding: var(--md-space);
+  border-radius: var(--xs-space);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

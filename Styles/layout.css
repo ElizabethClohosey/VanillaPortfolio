@@ -11,6 +11,12 @@ body {
     var(--footer-height, 0px)
   ); /* Reserve dynamic footer space */
   height: 100%;
+
+  background: black;
+  color: var(--brandSecondary);
+  background: #000 url("../assets//images/Parallax/unfoldTheUniverse_2.jpg")
+    repeat top center;
+  z-index: 0;
 }
 
 .wrapper {
@@ -20,35 +26,29 @@ body {
 }
 
 header {
-  /* padding: var(--md-space var(--md-space) 0); */
-  background: rgb(19, 19, 19);
-
   position: sticky;
   top: 0;
   z-index: 99;
-
   width: 100%; /* Full-width header */
+
+  background: rgb(19, 19, 19);
+  background: #000 url("../assets/images/animations/stars-2.png") repeat top
+    center;
 }
 
 main {
   flex: 1; /* Grow to fill available space */
   overflow-y: auto; /* Scroll if content overflows */
 
-  max-width: 1140px;
+  /* max-width: 1140px; */
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
 }
 
-/* section#skills,
-section#projects,
-section#about {
-  background: black;
-} */
-
-/* main section {
-  padding: var(--sm-space);
-  margin-bottom: var(--lg-space);
-} */
+.section-content {
+  max-width: 1140px;
+  margin: auto;
+}
 
 footer {
   background: black;
