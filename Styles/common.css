@@ -1,16 +1,3 @@
-.skills-parallax {
-  background-image: url("../assets/images/Parallax/skills.svg");
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 350px;
-  background-size: 25%;
-}
-
 .main-parallax {
   /* background-image: url("../assets//images/Parallax/cosmicCliffs.jpg"); */
   background-image: url("../assets//images/Parallax/orionNebula.jpg");
@@ -40,33 +27,17 @@
   background-size: cover;
 }
 
-.medical-parallax {
-  background-image: url("../assets/images/Parallax/MRI-black-and-white-monochrome-arm-chest-human-body-illustration-992842-pxhere.com.jpg");
-  min-height: 110px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @media screen and (max-width: 992px) {
-  .skills-parallax,
   .main-parallax,
-  .hobbies-parallax,
-  .medical-parallax {
+  .hobbies-parallax {
+    width: 100%;
     background-attachment: scroll; /* Disable parallax */
     background-position: center; /* Optional: Fine-tune image position */
     background-size: cover; /* Stretch image to fill */
     background-repeat: no-repeat; /* Prevent tiling */
   }
-}
 
-@media screen and (max-width: 992px) {
-  .skills-parallax,
-  .main-parallax,
-  .hobbies-parallax,
-  .medical-parallax {
+  .hobbies-parallax:nth-of-type(2) {
     display: none;
   }
 }
