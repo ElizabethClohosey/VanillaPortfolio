@@ -10,7 +10,7 @@
 
 :root {
   /* Theme  */
-  --brandPrimary: #00ffff;
+  --brandPrimary: rgb(0, 255, 255);
   --brandSecondary: #b53da1;
 
   --peach-light: #ffd4b9;
@@ -35,45 +35,59 @@
   --xl-space: 3rem;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 /* ===================
 
 /* Header 
 
 /* =================== */
 
-/* .header-content,
-.footer-content {
-  max-width: 1140px;
-  margin: auto;
-} */
+.intro-section > p {
+  margin-top: -20px;
+  font-size: calc(0.75rem + 1vw);
+}
 
-/* .header-content,
-.section-content {
-  position: relative;
-  background: black;
-  padding: var(--md-space);
-} */
-
-/* .section-content {
-  background: black;
-} */
-
-.header-content p {
-  margin-top: -10px;
+.intro-section > img {
+  /* width: calc(75vw - 6em); */
+  width: min(calc(75vw - 6em), 600px);
+  /* width: calc(60em - 75vw); */
+  /* max-width: 250px; */
 }
 
 #toggle-nav {
   position: absolute;
-  top: var(--lg-space);
+  top: var(--md-space);
   right: var(--md-space);
   background: none;
   border: none;
-  color: var(--brandSecondary);
+  color: var(--brandPrimary);
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 #contact-me-cta {
-  display: block;
-  margin: var(--xl-space) auto;
+  padding: var(--sm-space);
+  /* display: block; */
+  background: rgb(0, 255, 255);
+  border-radius: 0.25rem;
+  background: linear-gradient(
+    308deg,
+    var(--brandSecondary) 20%,
+    rgba(125, 211, 230, 1) 80%,
+    var(--brandPrimary) 100%
+  );
+  /* background: linear-gradient(
+    -220deg,
+    var(--brandSecondary) 20%,
+    rgba(125, 211, 230, 1) 80%,
+    var(--brandPrimary) 100%
+  ); */
+  margin: var(--lg-space) auto;
+  cursor: pointer;
 }
 
 #nav-menu.hidden {
@@ -93,25 +107,33 @@
 
 .social-icons {
   display: flex;
-  width: 20px;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin-top: calc(
+    -1 * min(4vw, 70px)
+  ); /* Negative margin scales with viewport */
+  margin-top: calc(-1 * min(100vw, 50px));
 }
 
 .social-icons > a {
+  font-size: 0.75rem;
   color: var(--brandPrimary);
-  margin-right: var(--md-space);
+  margin: 0 var(--md-space) var(--md-space) 0;
+  max-width: 20px;
+  cursor: pointer;
 }
 
-/* ===================
+#skills {
+  background: black;
+  /* box-shadow: 0 0 8px 5px #070604 inset; */
+}
 
-/* SKILLS 
-
-/* =================== */
-
-.skills-1,
-.skills-2 {
-  display: flex;
-  padding: var(--sm-space);
-  justify-content: space-around;
-  /* border-top: 2px solid red; */
-  /* border-bottom: 2px solid red; */
+#projects,
+#about {
+  max-width: 1140px;
+  margin: auto;
+  background: black;
+  /* box-shadow: 0 0 8px 5px #070604 inset; */
+  /* box-shadow: 0 0 10px 50px #070604; */
 }
