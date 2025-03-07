@@ -35,11 +35,6 @@
   --xl-space: 3rem;
 }
 
-button {
-  background: none;
-  border: none;
-}
-
 /* ===================
 
 /* Header 
@@ -52,10 +47,7 @@ button {
 }
 
 .intro-section > img {
-  /* width: calc(75vw - 6em); */
   width: min(calc(75vw - 6em), 600px);
-  /* width: calc(60em - 75vw); */
-  /* max-width: 250px; */
 }
 
 #toggle-nav {
@@ -80,12 +72,6 @@ button {
     rgba(125, 211, 230, 1) 80%,
     var(--brandPrimary) 100%
   );
-  /* background: linear-gradient(
-    -220deg,
-    var(--brandSecondary) 20%,
-    rgba(125, 211, 230, 1) 80%,
-    var(--brandPrimary) 100%
-  ); */
   margin: var(--lg-space) auto;
   cursor: pointer;
 }
@@ -122,18 +108,4 @@ button {
   margin: 0 var(--md-space) var(--md-space) 0;
   max-width: 20px;
   cursor: pointer;
-}
-
-#skills {
-  background: black;
-  /* box-shadow: 0 0 8px 5px #070604 inset; */
-}
-
-#projects,
-#about {
-  max-width: 1140px;
-  margin: auto;
-  background: black;
-  /* box-shadow: 0 0 8px 5px #070604 inset; */
-  /* box-shadow: 0 0 10px 50px #070604; */
 }
