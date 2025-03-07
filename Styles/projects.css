@@ -11,7 +11,7 @@
   margin: 0 auto;
   background: var(--dark);
   background: rgba(0, 0, 0, 0.6);
-  background: gray;
+  /* background: gray; */
   z-index: 10;
 }
 
