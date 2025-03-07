@@ -1,8 +1,18 @@
+#projects {
+  position: relative;
+  background: var(--dark);
+  background-image: url("../assets/images/animations/stars-2.png");
+}
+
 .project-card {
+  padding: var(--md-space);
   max-width: 250px;
   text-align: center;
-  border: 1px solid red;
   margin: 0 auto;
+  background: var(--dark);
+  background: rgba(0, 0, 0, 0.6);
+  background: gray;
+  z-index: 10;
 }
 
 .project-card:not(:last-of-type) {
@@ -12,7 +22,8 @@
 .project-card img {
   height: 150px;
   width: 150px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 5px red;
 }
 
 .project-card > .link-bar {

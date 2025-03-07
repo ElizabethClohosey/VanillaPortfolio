@@ -1,8 +1,6 @@
 .main-parallax {
   background-image: url("../assets//images/Parallax/plethoraOfCarbonMolecules.jpg");
-  /* background-image: url("../assets//images/Parallax/orionNebula.jpg"); */
   min-height: 300px;
-  /* width: 75%; */
   width: 100%;
   margin: auto;
   border-radius: 2%;
@@ -15,10 +13,6 @@
   background-position-x: center;
   background-position-y: 10%;
   background-size: cover;
-  /* background-size: contain; */
-
-  /* border-radius: 50%; */
-  /* box-shadow: 0 0 8px 5px #070604; */
 }
 
 .hobbies-parallax {
@@ -35,9 +29,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  /* .main-parallax {
-    background-image: url("../assets//images/Parallax/orionNebula.jpg");
-  } */
   .main-parallax,
   .hobbies-parallax {
     background-attachment: scroll; /* Disable parallax */

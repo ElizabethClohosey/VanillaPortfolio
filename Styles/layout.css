@@ -15,7 +15,7 @@ body {
   background: black;
   color: white;
   background: #000 url("../assets//images/Parallax/unfoldTheUniverse_2.jpg")
-    repeat top center;
+    no-repeat top center;
   backdrop-filter: blur(5px);
   z-index: 0;
 }
@@ -33,20 +33,10 @@ header {
   width: 100%; /* Full-width header */
 
   padding: var(--md-space);
-  color: var(--brandSecondary);
-  background: rgb(0, 0, 0);
+  /* color: var(--brandSecondary); */
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
-
-/* header::before {
-  content: "";
-  position: absolute;
-  inset: 0; 
-  background-color: rgba(0, 0, 0, 0.6); 
-  opacity: 1; 
-  pointer-events: none;
-} */
 
 main {
   flex: 1; /* Grow to fill available space */
