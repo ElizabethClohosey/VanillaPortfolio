@@ -10,7 +10,8 @@
 
 :root {
   /* Theme  */
-  --brandPrimary: rgb(0, 255, 255);
+  /* --brandPrimary: rgb(0, 255, 255); */
+  --brandPrimary: #3f99d2;
   --brandSecondary: #b53da1;
 
   --peach-light: #ffd4b9;

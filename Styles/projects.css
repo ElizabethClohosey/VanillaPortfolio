@@ -2,31 +2,49 @@
   position: relative;
   background: var(--dark);
   background-image: url("../assets/images/animations/stars-2.png");
+  padding: var(--xl-space);
+}
+
+#projects > section > div:nth-child(odd) {
+  margin-left: auto;
 }
 
 .project-card {
-  padding: var(--md-space);
-  max-width: 250px;
+  max-width: 350px;
   text-align: center;
-  margin: 0 auto;
+  margin: var(--xl-space) 0;
   background: var(--dark);
-  background: rgba(0, 0, 0, 0.6);
-  /* background: gray; */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
 
-.project-card:not(:last-of-type) {
-  margin-bottom: var(--lg-space);
+.project-card > .card-header {
+  padding: var(--md-space);
 }
 
-.project-card img {
+.project-card .card-header img {
   height: 150px;
   width: 150px;
-  /* border: 1px solid black; */
-  box-shadow: 0 0 5px red;
+  box-shadow: 0 0 10px 3px var(--brandPrimary);
+}
+
+.project-title {
+  max-width: 150px;
+}
+
+.project-card > .description {
+  background: var(--dark);
+  padding: var(--sm-space);
 }
 
 .project-card > .link-bar {
   display: flex;
   justify-content: space-between;
+  background: var(--dark);
+  padding: var(--md-space);
+}
+
+.project-card > .link-bar p {
+  border: 1px solid red;
+  padding: var(--sm-space);
 }
