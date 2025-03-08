@@ -2,13 +2,13 @@
   margin: var(--xl-space) 0;
 }
 
-img.skills {
-  text-align: center;
-}
-
 .skills-container {
   padding: var(--lg-space);
   text-align: center;
+}
+
+.skills-container > .skills {
+  width: min(calc(90vw - 3em), 400px);
 }
 
 .skills-1,
@@ -18,8 +18,7 @@ img.skills {
   justify-content: space-around;
 }
 
-.skills-1 > i,
-.skills-2 > i {
+#skills i {
   font-size: calc(1em + 1vw);
   background: black;
   color: var(--peach-light);
@@ -28,9 +27,7 @@ img.skills {
   align-items: center;
   justify-content: center;
 
-  /* border: 1px solid var(--peach-light); */
   box-shadow: 0px 0px 5px var(--peach-light);
   height: 60px;
   width: 60px;
 }
-

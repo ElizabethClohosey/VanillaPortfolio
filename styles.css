@@ -43,14 +43,14 @@
 
 /* =================== */
 
+.intro-section > img {
+  width: min(calc(75vw - 6em), 600px);
+}
+
 .intro-section > p {
   margin-top: -10px;
   font-size: calc(0.4rem + 1vw);
   color: var(--brandPrimary);
-}
-
-.intro-section > img {
-  width: min(calc(75vw - 6em), 600px);
 }
 
 #toggle-nav {
