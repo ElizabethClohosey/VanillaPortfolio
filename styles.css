@@ -44,8 +44,9 @@
 /* =================== */
 
 .intro-section > p {
-  margin-top: -20px;
-  font-size: calc(0.75rem + 1vw);
+  margin-top: -10px;
+  font-size: calc(0.4rem + 1vw);
+  color: var(--brandPrimary);
 }
 
 .intro-section > img {
@@ -66,16 +67,24 @@
 #contact-me-cta {
   padding: var(--sm-space);
   /* display: block; */
-  background: rgb(0, 255, 255);
   border-radius: 0.25rem;
+  border: 1px solid var(--brandPrimary);
+  background: black;
+  box-shadow: 2px 1px 5px var(--brandPrimary);
+  color: white;
+  /* background: rgb(0, 255, 255);
   background: linear-gradient(
     308deg,
     var(--brandSecondary) 20%,
     rgba(125, 211, 230, 1) 80%,
     var(--brandPrimary) 100%
-  );
+  ); */
   margin: var(--lg-space) auto;
   cursor: pointer;
+}
+
+#contact-me-cta:hover {
+  background-color: var(--brandPrimary);
 }
 
 #nav-menu.hidden {
