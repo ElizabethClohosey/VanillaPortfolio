@@ -1,7 +1,8 @@
 @import "./Styles/normalize.css";
 @import "./Styles/layout.css";
-@import "./Styles/projects.css";
 @import "./Styles/skills.css";
+@import "./Styles/projects.css";
+@import "./Styles/about.css";
 @import "./Styles/common.css";
 
 /* Animations */

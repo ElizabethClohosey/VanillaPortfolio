@@ -1,0 +1,20 @@
+#about {
+  background: #000 url("../assets//images/Parallax/unfoldTheUniverse_2.jpg")
+    no-repeat center center;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Covers entire parent */
+  backdrop-filter: blur(5px);
+  z-index: 0; /* Behind content */
+  pointer-events: none; /* Makes sure it doesn't interfere */
+}
+
+#about > * {
+  position: relative; /* Bring content above the blur layer */
+  z-index: 1;
+}
