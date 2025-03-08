@@ -7,10 +7,6 @@
   text-align: center;
 }
 
-.skills-container > .skills {
-  width: min(calc(90vw - 3em), 400px);
-}
-
 .skills-1,
 .skills-2 {
   display: flex;

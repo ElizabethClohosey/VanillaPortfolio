@@ -2,7 +2,7 @@
   position: relative;
   background: var(--dark);
   background-image: url("../assets/images/animations/stars-2.png");
-  padding: var(--xl-space);
+  padding: var(--xl-space) var(--md-space);
 }
 
 #projects > section > div:nth-child(odd) {
@@ -29,7 +29,7 @@
 }
 
 .project-title {
-  max-width: 200px;
+  max-width: 100px;
   margin: auto;
 }
 

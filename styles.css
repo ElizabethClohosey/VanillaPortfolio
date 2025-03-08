@@ -11,23 +11,27 @@
 
 :root {
   /* Theme  */
-  /* --brandPrimary: rgb(0, 255, 255); */
   --brandPrimary: #3f99d2;
-  --brandSecondary: #b53da1;
+  --brandSecondary: #fea6cc;
+  --brandSecondary-rgb: 254, 164, 203;
 
   --peach-light: #ffd4b9;
   --salmon: #fea7a0;
-  --blush-pink: #fea6cc;
   --orchid: #ed6ab8;
+  --magenta: #b53da1;
   --royal-purple: #642aa5;
   --midnight-purple: #2a0a56;
   --electric-indigo: #4321a9;
   --cosmic-navy: #140655;
   --dark: #010101;
-  --light: #f5f5f5;
+  --light: #e3f8f8;
   --neutral-100: #;
   --neutral: #;
   --neutral-300: #;
+  --neutral-700: #040404;
+
+  --darkText: #ffffffb3;
+  --lightText: #;
 
   /* Spacing  */
   --xs-space: 0.15rem;
@@ -50,7 +54,10 @@
 .intro-section > p {
   margin-top: -10px;
   font-size: calc(0.4rem + 1vw);
+  /* font-weight: 300; */
   color: var(--brandPrimary);
+  /* color: rgba(255, 255, 255, 0.7); */
+  color: var(--darkText);
 }
 
 #toggle-nav {
@@ -66,25 +73,18 @@
 
 #contact-me-cta {
   padding: var(--sm-space);
-  /* display: block; */
   border-radius: 0.25rem;
   border: 1px solid var(--brandPrimary);
   background: black;
   box-shadow: 2px 1px 5px var(--brandPrimary);
-  color: white;
-  /* background: rgb(0, 255, 255);
-  background: linear-gradient(
-    308deg,
-    var(--brandSecondary) 20%,
-    rgba(125, 211, 230, 1) 80%,
-    var(--brandPrimary) 100%
-  ); */
+  color: var(--brandPrimary);
   margin: var(--lg-space) auto;
   cursor: pointer;
 }
 
 #contact-me-cta:hover {
   background-color: var(--brandPrimary);
+  color: white;
 }
 
 #nav-menu.hidden {
@@ -119,4 +119,15 @@
   margin: 0 var(--md-space) var(--md-space) 0;
   max-width: 20px;
   cursor: pointer;
+}
+
+/* ===================
+
+/* SECTIONS STYLE 
+
+/* =================== */
+
+.section-title {
+  width: min(calc(90vw - 3em), 400px);
+  /* margin: var(--lg-space) 0; */
 }

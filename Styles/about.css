@@ -3,6 +3,7 @@
     no-repeat center center;
   backdrop-filter: blur(5px);
   background-size: cover;
+  padding: var(--xl-space) var(--md-space);
 }
 
 #about::before {
@@ -17,4 +18,26 @@
 #about > * {
   position: relative; /* Bring content above the blur layer */
   z-index: 1;
+}
+
+.developing {
+  background: black;
+}
+
+#about > .section-container > .developing,
+.sub-about {
+  background: black;
+  padding: var(--md-space);
+  margin: var(--lg-space) 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px var(--neutral-700);
+}
+
+.sub-about h3 {
+  margin-bottom: var(--lg-space);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  /* text-shadow: 0px 3px 5px rgba(233, 10, 10, 0.5); */
+  text-shadow: 0px 3px 5px rgba(var(--brandSecondary-rgb), 0.7);
+  /* text-shadow: 0px 3px 5px var(--brandSecondary); */
 }
