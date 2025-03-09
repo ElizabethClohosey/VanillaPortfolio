@@ -1,5 +1,6 @@
 .main-parallax {
-  background-image: url("../assets//images/Parallax/plethoraOfCarbonMolecules.jpg");
+  /* background-image: url("../assets//images/Parallax/plethoraOfCarbonMolecules.jpg"); */
+  background-image: url("../assets//images/FinalParallax/plethoraOfCarbonMolecules.webp");
   min-height: 300px;
   width: 100%;
   margin: auto;
@@ -16,8 +17,23 @@
 }
 
 .hobbies-parallax {
-  background-image: url("../assets/images/Parallax/A-vibrant-Aurora-Borealis.jpg");
-  min-height: 200px;
+  /* background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis-2.webp"); */
+  background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis.webp");
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.end-about-parallax {
+  /* background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis-2.webp"); */
+  background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis-2.webp");
+  min-height: 600px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -30,14 +46,16 @@
 
 @media screen and (max-width: 992px) {
   .main-parallax,
-  .hobbies-parallax {
+  .hobbies-parallax,
+  .end-about-parallax {
+    min-height: 200px;
     background-attachment: scroll; /* Disable parallax */
     background-position: center; /* Optional: Fine-tune image position */
     background-size: cover; /* Stretch image to fill */
     background-repeat: no-repeat; /* Prevent tiling */
   }
 
-  .hobbies-parallax:nth-of-type(2) {
+  /* .hobbies-parallax:nth-of-type(2) {
     display: none;
-  }
+  } */
 }

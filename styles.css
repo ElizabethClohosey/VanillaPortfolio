@@ -84,7 +84,7 @@
 
 #contact-me-cta:hover {
   background-color: var(--brandPrimary);
-  color: white;
+  color: black;
 }
 
 #nav-menu.hidden {

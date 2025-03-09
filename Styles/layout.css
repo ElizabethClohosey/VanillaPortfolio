@@ -16,7 +16,7 @@ body {
   /* color: rgb(212, 212, 212); */
   color: var(--darkText);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #000 url("../assets//images/Parallax/unfoldTheUniverse_2.jpg")
+  background: #000 url("../assets/images/FinalParallax/unfoldTheUniverse.webp")
     no-repeat top center;
   background-size: cover;
   backdrop-filter: blur(5px);
@@ -49,6 +49,7 @@ main {
 }
 
 .section-container {
+  padding: var(--lg-space);
   max-width: 1140px;
   margin: auto;
 }

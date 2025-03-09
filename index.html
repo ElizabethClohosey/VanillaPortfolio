@@ -107,71 +107,287 @@
               src="./assets/images/projects.svg"
               alt="The word 'Projects' spelled out in stylized letters."
             />
+
+            <!-- AUTH CORE  -->
             <div class="project-card">
-              <div class="card-header">
-                <img src="./assets/images/rbac.png" alt="#" />
-              </div>
-              <img
-                class="project-title"
-                src="./assets/images/authCore.svg"
-                alt=""
-                class="src"
-              />
-              <p class="description">
-                Authentication + Role-based security. Each project should be
-                accompanied by a clear explanation of what it is, your role in
-                it, and the technologies used. This helps potential employers or
-                clients understand the scope and your contribution.
-              </p>
-              <div class="link-bar">
-                <p>GitHub</p>
-                <p>Project</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="card-header">
-                <img src="./assets/images/bcb_logo.png" alt="#" />
-              </div>
-              <!-- <h3>Bookclub Application</h3> -->
-              <img
-                class="project-title"
-                src="./assets/images/bookclub.svg"
-                alt=""
-              />
-              <p class="description">
-                Each project should be accompanied by a clear explanation of
-                what it is, your role in it, and the technologies used. This
-                helps potential employers or clients understand the scope and
-                your contribution.
-              </p>
-              <div class="link-bar">
-                <p>GitHub</p>
-                <p>Project</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <!-- <h3>Project Title</h3> -->
               <div class="card-header">
                 <img
-                  src="./assets/images/projects-images/under-construction.png"
-                  alt="#"
+                  class="project-title"
+                  src="./assets/images/projects/authCore.svg"
+                  alt=""
+                  class="src"
                 />
               </div>
+              <div class="card-body">
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/authCore.webp"
+                  alt="#"
+                />
 
-              <img
-                class="project-title"
-                src="./assets/images/lunaTrix.svg"
-                alt=""
-              />
-              <p class="description">
-                Each project should be accompanied by a clear explanation of
-                what it is, your role in it, and the technologies used. This
-                helps potential employers or clients understand the scope and
-                your contribution.
-              </p>
-              <div class="link-bar">
-                <p>GitHub</p>
-                <p>Project</p>
+                <section class="project-description">
+                  <p>
+                    AuthCore is a foundational project focused on authentication
+                    and role-based security. It provides a robust authentication
+                    system using Express, MongoDB, and JWT, with middleware to
+                    protect routes and enforce user roles. The frontend is built
+                    with React and Redux, ensuring seamless state management and
+                    secure user authentication.
+                  </p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="authcore-see-more">
+                    <p>Key Features:</p>
+                    <ul>
+                      <li>
+                        JWT Authentication – Secure login/logout with access and
+                        refresh tokens
+                      </li>
+                      <li>
+                        Role-Based Access Control – Protect routes based on user
+                        roles
+                      </li>
+                      <li>
+                        Middleware Security – Centralized authentication and
+                        authorization logic
+                      </li>
+                      <li>
+                        React/Redux Frontend – Handles authentication state and
+                        API integration
+                      </li>
+                      <li>
+                        Cookie-Based Token Storage – Enhancing security by
+                        preventing XSS vulnerabilities
+                      </li>
+                    </ul>
+                    <p>Why was this built:</p>
+                    <p>
+                      AuthCore was developed to create a modular and reusable
+                      authentication system that can be easily integrated into
+                      future projects. It serves as a learning experience in
+                      building secure, scalable, and maintainable authentication
+                      flows while reinforcing best practices in backend and
+                      frontend security.
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="project-icon"
+                  href="https://github.com/ElizabethClohosey/auth-backend"
+                  target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
+              </div>
+            </div>
+
+            <!-- CORE UI  -->
+            <div class="project-card">
+              <div class="card-header">
+                <img
+                  class="project-title"
+                  src="./assets/images/projects/coreUI.svg"
+                  alt=""
+                  class="src"
+                />
+              </div>
+              <div class="card-body">
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/coreUI.webp"
+                  alt="#"
+                />
+
+                <section class="project-description">
+                  <p>
+                    CoreUI is the React/Redux frontend that pairs with AuthCore,
+                    providing a seamless and secure user experience. Designed
+                    for authentication and role-based security, it integrates
+                    with AuthCore’s backend to manage user sessions, access
+                    control, and state management.
+                  </p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="coreUI-see-more">
+                    <p>Key Features:</p>
+                    <ul>
+                      <li>
+                        React + Redux – Efficient state management for
+                        authentication
+                      </li>
+                      <li>
+                        Secure Login & Logout – Handles access and refresh
+                        tokens
+                      </li>
+                      <li>
+                        Role-Based UI Rendering – Dynamically adjusts UI based
+                        on user roles
+                      </li>
+                      <li>
+                        Cookie-Based Authentication – Enhancing security against
+                        XSS
+                      </li>
+                      <li>
+                        Modular & Scalable – Designed for easy customization and
+                        expansion
+                      </li>
+                    </ul>
+                    <p>
+                      CoreUI ensures a smooth and intuitive authentication
+                      experience while reinforcing security best practices.
+                      Built to be scalable, maintainable, and easy to integrate,
+                      it serves as the perfect UI companion to AuthCore.
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="project-icon"
+                  href="https://github.com/ElizabethClohosey/ReactReduxFoundation"
+                  target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
+              </div>
+            </div>
+
+            <!-- LunaTrix  -->
+            <div class="project-card">
+              <div class="card-header">
+                <img
+                  class="project-title"
+                  src="./assets/images/projects/lunatrix.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/lunaTrix_logo.webp"
+                  alt="#"
+                />
+                <section class="project-description">
+                  <p>LunaTrix is .......</p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="lunaTrix-see-more">
+                    <p>Key Features:</p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a class="project-icon" href="#" target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
+              </div>
+            </div>
+
+            <!-- BOOKCLUB PWA  -->
+            <div class="project-card">
+              <div class="card-header">
+                <img
+                  class="project-title"
+                  src="./assets/images/projects/bookclub.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/bcb_logo.webp"
+                  alt="#"
+                />
+                <section class="project-description">
+                  <p>This application is .......</p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="bookclub-see-more">
+                    <p>Key Features:</p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a class="project-icon" href="#" target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
+              </div>
+            </div>
+
+            <!-- CHROMA CSS -->
+            <div class="project-card">
+              <div class="card-header">
+                <p>ChromaCSS</p>
+                <!-- <img class="project-title" src="" alt="" /> -->
+              </div>
+              <div class="card-body">
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/under-construction.png"
+                  alt="#"
+                />
+                <section class="project-description">
+                  <p>This application is .......</p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="bookclub-see-more">
+                    <p>Key Features:</p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a class="project-icon" href="#" target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
+              </div>
+            </div>
+
+            <!-- UNDER CONSTRUCTION  -->
+            <div class="project-card">
+              <div class="card-header">
+                <img
+                  class="project-title"
+                  src="./assets/images/projects/comingSoon.svg"
+                  alt=""
+                />
+              </div>
+              <div class="card-body">
+                <img
+                  class="project-image"
+                  src="./assets/images/projects/under-construction.png"
+                  alt="#"
+                />
+                <section class="project-description">
+                  <p>This application is .......</p>
+
+                  <br />
+                  <p>See More Link.... Coming soon</p>
+
+                  <div id="under-construction-see-more">
+                    <p>Key Features:</p>
+                  </div>
+                </section>
+              </div>
+              <div class="card-footer">
+                <a class="project-icon" href="#" target="_blank"
+                  ><i class="fab fa-brands fa-github fa-2x"></i
+                ></a>
+                <a>Let's check it out</a>
               </div>
             </div>
           </section>
@@ -191,7 +407,7 @@
               alt="The words 'About Me' spelled out in stylized letters."
             />
             <section class="developing">
-              <img src="" alt=""/>
+              <img src="" alt="" />
               <p>
                 I'm a fullstack software developer with a background in the
                 medical field, driven by a passion for solving problems
@@ -255,7 +471,7 @@
         </section>
       </main>
 
-      <div class="hobbies-parallax"></div>
+      <div class="end-about-parallax"></div>
 
       <footer>
         <section class="footer-content">

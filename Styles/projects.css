@@ -5,7 +5,7 @@
   padding: var(--xl-space) var(--md-space);
 }
 
-#projects > section > div:nth-child(odd) {
+#projects > section > div:nth-child(even) {
   margin-left: auto;
 }
 
@@ -16,36 +16,67 @@
   background: var(--dark);
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
+  box-shadow: 0 0 3px var(--royal-purple);
 }
 
 .project-card > .card-header {
-  padding: var(--md-space);
+  padding: var(--lg-space) 0;
 }
 
-.project-card .card-header img {
+.project-card .project-img {
   height: 150px;
   width: 150px;
-  box-shadow: 0 0 10px 3px var(--brandPrimary);
+  /* box-shadow: 0 0 10px 3px var(--brandPrimary); */
 }
+
+/* .project-card .card-body {
+  padding: var(--md-space);
+} */
 
 .project-title {
   max-width: 100px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.project-card > .description {
+/* .project-card > .project-description {
   background: var(--dark);
+  padding: var(--sm-space);
+} */
+.project-card .project-description {
   padding: var(--sm-space);
 }
 
-.project-card > .link-bar {
+#authcore-see-more,
+#coreUI-see-more,
+#lunaTrix-see-more,
+#bookclub-see-more,
+#under-construction-see-more {
+  text-align: left;
+  display: none;
+}
+
+.project-card > .card-footer {
   display: flex;
   justify-content: space-between;
   background: var(--dark);
   padding: var(--md-space);
 }
 
-.project-card > .link-bar p {
+.project-card > .card-footer p {
   border: 1px solid red;
   padding: var(--sm-space);
+}
+
+.card-footer > a {
+  color: var(--royal-purple);
+  border: 1px solid var(--royal-purple);
+  border-radius: 0.25rem;
+  box-shadow: 2px 1px 5px var(--royal-purple);
+  padding: var(--sm-space);
+  align-self: center;
+  cursor: pointer;
+}
+.card-footer > a:hover {
+  background: var(--royal-purple);
+  color: black;
 }
