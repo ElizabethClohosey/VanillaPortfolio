@@ -41,7 +41,7 @@
   height: 100%;
   /* display: block; */
   background: transparent;
-  background-image: url("../../assets/images/animations/clouds-5.svg");
+  background-image: url("../../assets/images/animations/clouds.svg");
   background-size: cover;
   background-repeat: repeat;
   z-index: 2;

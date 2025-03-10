@@ -14,10 +14,10 @@ body {
 
   background: black;
   /* color: rgb(212, 212, 212); */
-  color: var(--darkText);
+  color: var(--darkThemeText);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #000 url("../assets/images/FinalParallax/unfoldTheUniverse.webp")
-    no-repeat top center;
+  background: #000 url("../assets/images/unfoldTheUniverse.webp") no-repeat top
+    center;
   background-size: cover;
   backdrop-filter: blur(5px);
   z-index: 0;

@@ -1,7 +1,10 @@
 #projects {
   position: relative;
   background: var(--dark);
-  background-image: url("../assets/images/animations/stars-2.png");
+  background-image: url("../assets/images/projects/stars.webp");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-position: center;
   padding: var(--xl-space) var(--md-space);
 }
 
@@ -16,34 +19,31 @@
   background: var(--dark);
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
-  box-shadow: 0 0 3px var(--royal-purple);
+  box-shadow: 0 0 3px var(--luminous-lilac);
 }
 
 .project-card > .card-header {
   padding: var(--lg-space) 0;
+  /* font-size: 98%; */
+  font-size: 30px;
+  color: var(--luminous-lilac);
+  box-shadow: 0 3px 3px -3px var(--luminous-lilac);
+  /* border-bottom: 1px solid var(--luminous-lilac); */
+  margin-bottom: var(--sm-space);
 }
 
 .project-card .project-img {
   height: 150px;
   width: 150px;
-  /* box-shadow: 0 0 10px 3px var(--brandPrimary); */
 }
 
-/* .project-card .card-body {
-  padding: var(--md-space);
-} */
-
-.project-title {
-  max-width: 100px;
+/* .project-title {
   margin: 0 auto;
-}
-
-/* .project-card > .project-description {
-  background: var(--dark);
-  padding: var(--sm-space);
 } */
+
 .project-card .project-description {
   padding: var(--sm-space);
+  font-size: 0.75em;
 }
 
 #authcore-see-more,
@@ -63,20 +63,19 @@
 }
 
 .project-card > .card-footer p {
-  border: 1px solid red;
   padding: var(--sm-space);
 }
 
 .card-footer > a {
-  color: var(--royal-purple);
-  border: 1px solid var(--royal-purple);
+  color: var(--azure-breeze);
+  border: 1px solid var(--azure-breeze);
   border-radius: 0.25rem;
-  box-shadow: 2px 1px 5px var(--royal-purple);
+  box-shadow: 2px 1px 5px var(--azure-breeze);
   padding: var(--sm-space);
   align-self: center;
   cursor: pointer;
 }
 .card-footer > a:hover {
-  background: var(--royal-purple);
+  background: var(--azure-breeze);
   color: black;
 }
