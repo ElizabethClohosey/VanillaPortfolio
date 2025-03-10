@@ -116,7 +116,8 @@
 .social-icons > a {
   font-size: 0.75rem;
   color: var(--brandPrimary);
-  margin: 0 var(--md-space) var(--md-space) 0;
+  /* margin: 0 var(--md-space) var(--md-space) 0; */
+  margin: var(--md-space) 0;
   max-width: 20px;
   cursor: pointer;
 }
