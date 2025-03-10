@@ -26,15 +26,15 @@
   padding: var(--lg-space) 0;
   /* font-size: 98%; */
   font-size: 30px;
-  color: var(--luminous-lilac);
+  /* color: var(--luminous-lilac); */
   box-shadow: 0 3px 3px -3px var(--luminous-lilac);
   /* border-bottom: 1px solid var(--luminous-lilac); */
   margin-bottom: var(--sm-space);
 }
 
 .project-card .project-img {
-  height: 150px;
-  width: 150px;
+  max-height: 150px;
+  max-width: 150px;
 }
 
 /* .project-title {
@@ -67,15 +67,16 @@
 }
 
 .card-footer > a {
-  color: var(--azure-breeze);
-  border: 1px solid var(--azure-breeze);
+  color: var(--luminous-lilac);
+  border: 1px solid var(--luminous-lilac);
   border-radius: 0.25rem;
-  box-shadow: 2px 1px 5px var(--azure-breeze);
+  box-shadow: 2px 1px 5px var(--luminous-lilac);
   padding: var(--sm-space);
   align-self: center;
   cursor: pointer;
+  text-decoration: none;
 }
 .card-footer > a:hover {
-  background: var(--azure-breeze);
+  background: var(--luminous-lilac);
   color: black;
 }
