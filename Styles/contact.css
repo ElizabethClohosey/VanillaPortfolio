@@ -29,11 +29,10 @@
 }
 
 .form-wrapper {
-  /* width: 95%; */
   margin: var(--lg-space) auto;
   max-width: 1140px;
   padding: var(--lg-space);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 form {
@@ -42,6 +41,7 @@ form {
   margin: auto;
   padding: var(--md-space);
   background: var(--neutral-700);
+  border-radius: 8px;
 }
 
 .chroma-input {
@@ -52,6 +52,20 @@ form {
 input,
 textarea {
   width: 100%;
+  background: var(--neutral-600);
+  color: var(--darkThemeText);
+  border: none;
+  border: 1px solid var(--luminous-lilac);
+  border-radius: 0.2rem;
+  outline: none;
+  padding-left: var(--sm-space);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid var(--luminous-lilac);
+  border-left: 10px solid var(--luminous-lilac);
+  box-shadow: 0 0 4px 2px var(--luminous-lilac);
 }
 
 .chroma-input label {
@@ -69,4 +83,9 @@ button[type="submit"] {
   color: var(--azure-breeze);
   margin: var(--lg-space) auto;
   cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: var(--azure-breeze);
+  color: black;
 }
