@@ -7,29 +7,15 @@ body {
     var(--footer-height, 0px)
   ); /* Reserve dynamic footer space */
   height: 100%;
+  z-index: 0;
 
-  background: black;
-  /* color: rgb(212, 212, 212); */
   color: var(--darkThemeText);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: black;
   background: #000 url("../assets/images/unfoldTheUniverse.webp") no-repeat top
     center;
   background-size: cover;
-  /* backdrop-filter: blur(5px); */
-  z-index: 0;
 }
-
-/* body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  backdrop-filter: blur(5px);
-  z-index: -1;
-} */
 
 .wrapper {
   display: flex;
@@ -44,9 +30,7 @@ header {
   width: 100%; /* Full-width header */
 
   padding: var(--md-space);
-  /* color: var(--brandSecondary); */
-  /* background: rgba(0, 0, 0, 0.8); */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 
   transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }

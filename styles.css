@@ -40,22 +40,15 @@
   --xl-space: 3rem;
 }
 
-/* body,
-html {
-  transform: none !important;
-} */
 /* ===================
 
 /* Header 
 
 /* =================== */
 header.transparent {
-  /* background: rgba(255, 255, 255, 0); */
-  opacity: 0; /* Smooth fade out */
-  /* backdrop-filter: blur(0px); */
+  opacity: 0;
   pointer-events: none;
-  transform: translateY(-20px); /* Moves it slightly up for a natural effect */
-  /* backdrop-filter: blur(10px); */
+  transform: translateY(-10px); /* Moves it slightly up for a natural effect */
 }
 
 .intro-section > img {
@@ -156,7 +149,7 @@ header.transparent {
   right: 20px;
   background: var(--azure-breeze);
   box-shadow: 0 0 5px 5px var(--azure-breeze);
-  color: bblack;
+  color: black;
   padding: var(--md-space);
   border-radius: 8px;
   cursor: pointer;
