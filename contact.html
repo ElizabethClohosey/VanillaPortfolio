@@ -28,24 +28,33 @@
         <button id="home-btn">Home</button>
       </header>
       <main>
-        <section class="contact">
-          <p>Include "Contact Information"</p>
-          <form
-            action="mailto:your-email@example.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+        <section id="contact">
+          <section class="section-container">
+            <img src="./assets/images/projects.svg" />
+            <form
+              class="contact-form"
+              action="mailto:your-email@example.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="chroma-input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+              <div class="chroma-input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+              <div class="chroma-input">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
 
-            <button type="submit">Send Message</button>
-          </form>
+              <button type="submit">Send Message</button>
+            </form>
+          </section>
         </section>
       </main>
       <footer>

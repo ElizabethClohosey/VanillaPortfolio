@@ -1,3 +1,7 @@
+#contact {
+  padding: var(--xl-space) 0;
+}
+
 #home-btn {
   position: absolute;
   top: var(--md-space);
@@ -16,4 +20,39 @@
 #home-btn:hover {
   background-color: var(--azure-breeze);
   color: black;
+}
+
+form {
+  /* width: 80%; */
+  max-width: 420px;
+  margin: auto;
+  padding: var(--md-space);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.chroma-input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.chroma-input label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  padding: var(--sm-space);
+  border-radius: 0.25rem;
+  border: 1px solid var(--azure-breeze);
+  background: black;
+  box-shadow: 2px 1px 5px var(--azure-breeze);
+  color: var(--azure-breeze);
+  margin: var(--lg-space) auto;
+  cursor: pointer;
 }
