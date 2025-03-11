@@ -39,6 +39,8 @@ header {
   /* color: var(--brandSecondary); */
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
+
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 main {

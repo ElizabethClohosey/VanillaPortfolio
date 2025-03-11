@@ -45,6 +45,13 @@
 /* Header 
 
 /* =================== */
+header.transparent {
+  /* background: rgba(255, 255, 255, 0); */
+  opacity: 0; /* Smooth fade out */
+  backdrop-filter: blur(0px);
+  pointer-events: none;
+  transform: translateY(-20px); /* Moves it slightly up for a natural effect */
+}
 
 .intro-section > img {
   width: min(calc(75vw - 6em), 600px);

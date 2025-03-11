@@ -3,6 +3,34 @@ contactMeBtn.onclick = function () {
   window.location.assign("./contact.html");
 };
 
+// window.addEventListener("scroll", () => {
+//   const header = document.querySelector("header");
+//   console.log(header.offsetHeight);
+//   if (window.scrollY > header.offsetHeight) {
+//     header.classList.add("transparent");
+//     console.log("Hello");
+//   } else {
+//     header.classList.remove("transparent");
+//     console.log("Bu Bye");
+//   }
+// });
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY) {
+    // Scrolling down -> Hide header
+    header.classList.add("transparent");
+  } else {
+    // Scrolling up -> Show header
+    header.classList.remove("transparent");
+  }
+
+  lastScrollY = currentScrollY;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   function scrollToElement(target) {
     const header = document.querySelector(".header");
