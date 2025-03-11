@@ -4,6 +4,7 @@
 @import "./Styles/projects.css";
 @import "./Styles/about.css";
 @import "./Styles/common.css";
+@import "./Styles/contact.css";
 
 /* Animations */
 @import "./Styles/animations/clouds.css";

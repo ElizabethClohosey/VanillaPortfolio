@@ -1,0 +1,19 @@
+#home-btn {
+  position: absolute;
+  top: var(--md-space);
+  right: var(--md-space);
+  color: var(--azure-breeze);
+  cursor: pointer;
+
+  padding: var(--sm-space);
+  border-radius: 0.25rem;
+  border: 1px solid var(--azure-breeze);
+  background: black;
+  box-shadow: 2px 1px 5px var(--azure-breeze);
+  color: var(--azure-breeze);
+}
+
+#home-btn:hover {
+  background-color: var(--azure-breeze);
+  color: black;
+}
