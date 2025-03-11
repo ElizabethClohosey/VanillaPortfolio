@@ -28,6 +28,7 @@
   --neutral-100: #;
   --neutral: #;
   --neutral-300: #;
+  --neutral-600: #131313;
   --neutral-700: #040404;
 
   --darkThemeText: #ffffffb3;
@@ -39,6 +40,12 @@
   --md-space: 0.5rem;
   --lg-space: 1rem;
   --xl-space: 3rem;
+}
+
+.wrapper.home {
+  background: #000 url("./assets/images/unfoldTheUniverse.webp") no-repeat top
+    center;
+  background-size: cover;
 }
 
 /* ===================
@@ -59,9 +66,8 @@ header.transparent {
 .intro-section > p {
   margin-top: -10px;
   font-size: calc(0.4rem + 1vw);
-  /* font-weight: 300; */
+  /* font-weight: 600; */
   color: var(--azure-breeze);
-  /* color: rgba(255, 255, 255, 0.7); */
   color: var(--darkThemeText);
 }
 
@@ -121,7 +127,6 @@ header.transparent {
 .social-icons > a {
   font-size: 0.75rem;
   color: var(--azure-breeze);
-  /* margin: 0 var(--md-space) var(--md-space) 0; */
   margin: var(--md-space) 0;
   max-width: 20px;
   cursor: pointer;
@@ -134,8 +139,6 @@ header.transparent {
 /* =================== */
 
 .section-title {
-  width: min(calc(90vw - 3em), 400px);
-  /* margin: var(--lg-space) 0; */
   width: min(calc(100vw - 3em), 400px);
 }
 /* =========================

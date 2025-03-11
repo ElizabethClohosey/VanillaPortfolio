@@ -8,7 +8,7 @@
   padding: var(--xl-space) 0;
 }
 
-#projects > section > div:nth-child(even) {
+#projects > section > div:nth-child(odd) {
   margin-left: auto;
 }
 

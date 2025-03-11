@@ -11,7 +11,7 @@
     ></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper contact">
       <header class="header">
         <!--                         -->
         <!--  HEADER: INTRO SECTION  -->
@@ -30,30 +30,32 @@
       <main>
         <section id="contact">
           <section class="section-container">
-            <img src="./assets/images/projects.svg" />
-            <form
-              class="contact-form"
-              action="mailto:your-email@example.com"
-              method="post"
-              enctype="text/plain"
-            >
-              <div class="chroma-input">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-              </div>
+            <img class="section-title" src="./assets/images/contact-me.svg" />
+            <div class="form-wrapper">
+              <form
+                class="contact-form"
+                action="mailto:your-email@example.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="chroma-input">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
 
-              <div class="chroma-input">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
+                <div class="chroma-input">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
 
-              <div class="chroma-input">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
+                <div class="chroma-input">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
 
-              <button type="submit">Send Message</button>
-            </form>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
           </section>
         </section>
       </main>

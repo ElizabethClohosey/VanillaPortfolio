@@ -1,3 +1,9 @@
+.wrapper.contact {
+  background-image: url("../assets/images/stars_with_clouds.webp");
+  background-position: center center;
+  background-size: cover;
+}
+
 #contact {
   padding: var(--xl-space) 0;
 }
@@ -22,12 +28,20 @@
   color: black;
 }
 
+.form-wrapper {
+  /* width: 95%; */
+  margin: var(--lg-space) auto;
+  max-width: 1140px;
+  padding: var(--lg-space);
+  background: rgba(0, 0, 0, 0.5);
+}
+
 form {
-  /* width: 80%; */
+  width: 90%;
   max-width: 420px;
   margin: auto;
   padding: var(--md-space);
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--neutral-700);
 }
 
 .chroma-input {
