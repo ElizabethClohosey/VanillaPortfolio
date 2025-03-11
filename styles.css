@@ -40,6 +40,10 @@
   --xl-space: 3rem;
 }
 
+/* body,
+html {
+  transform: none !important;
+} */
 /* ===================
 
 /* Header 
@@ -48,9 +52,10 @@
 header.transparent {
   /* background: rgba(255, 255, 255, 0); */
   opacity: 0; /* Smooth fade out */
-  backdrop-filter: blur(0px);
+  /* backdrop-filter: blur(0px); */
   pointer-events: none;
   transform: translateY(-20px); /* Moves it slightly up for a natural effect */
+  /* backdrop-filter: blur(10px); */
 }
 
 .intro-section > img {
@@ -138,4 +143,29 @@ header.transparent {
   width: min(calc(90vw - 3em), 400px);
   /* margin: var(--lg-space) 0; */
   width: min(calc(100vw - 3em), 400px);
+}
+/* =========================
+
+/* Scroll to Top Button
+
+/* ======================== */
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--azure-breeze);
+  box-shadow: 0 0 5px 5px var(--azure-breeze);
+  color: bblack;
+  padding: var(--md-space);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9;
+}
+
+#scrollToTop.show {
+  opacity: 1;
 }

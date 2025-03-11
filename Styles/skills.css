@@ -1,5 +1,6 @@
 #skills {
   padding: var(--xl-space) 0;
+  backdrop-filter: blur(5px);
 }
 
 .skills-container {

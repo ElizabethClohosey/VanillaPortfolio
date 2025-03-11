@@ -1,37 +1,41 @@
-const contactMeBtn = document.getElementById("contact-me-cta");
-contactMeBtn.onclick = function () {
-  window.location.assign("./contact.html");
-};
-
-// window.addEventListener("scroll", () => {
-//   const header = document.querySelector("header");
-//   console.log(header.offsetHeight);
-//   if (window.scrollY > header.offsetHeight) {
-//     header.classList.add("transparent");
-//     console.log("Hello");
-//   } else {
-//     header.classList.remove("transparent");
-//     console.log("Bu Bye");
-//   }
-// });
-let lastScrollY = window.scrollY;
-
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  const currentScrollY = window.scrollY;
-
-  if (currentScrollY > lastScrollY) {
-    // Scrolling down -> Hide header
-    header.classList.add("transparent");
-  } else {
-    // Scrolling up -> Show header
-    header.classList.remove("transparent");
-  }
-
-  lastScrollY = currentScrollY;
-});
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Navigate to contact page on click
+  const contactMeBtn = document.getElementById("contact-me-cta");
+  contactMeBtn.onclick = function () {
+    window.location.assign("./contact.html");
+  };
+
+  // Hide show header and scroll to top button on scroll
+  // let lastScrollY = window.scrollY;
+  const header = document.querySelector("header");
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+
+  // Scroll event listener
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > header.offsetHeight) {
+      // Scrolling down -> Hide header
+      header.classList.add("transparent");
+    } else if (currentScrollY < header.offsetHeight) {
+      // Back to top -> Show header
+      header.classList.remove("transparent");
+    }
+
+    // Show/hide scroll to top button
+    if (currentScrollY > 300) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+
+    // lastScrollY = currentScrollY;
+  });
+
+  // Scroll to top on button click
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   function scrollToElement(target) {
     const header = document.querySelector(".header");
     const headerOffset = header.offsetHeight;
