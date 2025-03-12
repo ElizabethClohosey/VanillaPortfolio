@@ -106,9 +106,8 @@ header.transparent {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
   background: black;
-  color: white;
+  background-image: url("./assets/images/projects/stars.webp");
   max-height: 0; /* Start collapsed */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Smooth unfolding */
