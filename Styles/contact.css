@@ -49,6 +49,10 @@ form {
   margin-bottom: 1rem;
 }
 
+.chroma-input input {
+  height: 2rem;
+}
+
 input,
 textarea {
   width: 100%;
@@ -72,7 +76,7 @@ textarea:focus {
 textarea {
   resize: none;
   overflow: hidden; /* Hides scrollbar */
-  min-height: 50px;
+  min-height: 100px;
   box-sizing: border-box; /* Includes padding in height calculation */
 }
 

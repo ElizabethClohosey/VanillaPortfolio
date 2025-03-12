@@ -34,20 +34,27 @@
           <section class="section-container">
             <img class="section-title" src="./assets/images/contact-me_2.svg" />
             <div class="form-wrapper">
-              <form
-                class="contact-form"
-                action="mailto:your-email@example.com"
-                method="post"
-                enctype="text/plain"
-              >
+              <form id="contact-form">
                 <div class="chroma-input">
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
 
                 <div class="chroma-input">
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                  />
                 </div>
 
                 <div class="chroma-input">
@@ -56,19 +63,24 @@
                     id="message"
                     name="message"
                     maxlength="500"
+                    placeholder="Send me a quick message about your project!"
                     required
                   ></textarea>
                   <span id="char-count">500/500 characters remaining</span>
                 </div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit">Send Email</button>
               </form>
             </div>
           </section>
         </section>
       </main>
       <footer>
-        <h1>Footer Content</h1>
+        <section class="footer-content">
+          <div class="photo-cred">
+            <p>Photo Cred Here</p>
+          </div>
+        </section>
       </footer>
     </div>
 

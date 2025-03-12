@@ -40,4 +40,32 @@ document.addEventListener("DOMContentLoaded", () => {
       this.dispatchEvent(new Event("input")); // Trigger resize and counter update
     }
   });
+
+  // Send contact form email
+  const form = document.querySelector("#contact-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Obfuscated email construction
+    const user = "elizabethclohosey";
+    const domain = "gmail.com";
+    const email = user + "@" + domain;
+
+    // Get form values
+    const name = this.querySelector('input[name="name"]').value;
+    const senderEmail = this.querySelector('input[name="email"]').value;
+    const subject = "Contact Request - Portfolio";
+    const message = this.querySelector('textarea[name="message"]').value;
+
+    // Construct mailto link with name, email, subject, and message
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `From: ${name} (${senderEmail})\n\nMessage:\n${message}`
+    )}`;
+
+    // Trigger email client
+    window.location.href = mailtoLink;
+  });
 });
