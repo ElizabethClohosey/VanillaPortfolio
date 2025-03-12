@@ -23,6 +23,9 @@
   --electric-indigo: #4321a9;
   --cosmic-navy: #140655;
 
+  --success: #61ff61;
+  --error: #ff6161;
+
   --dark: #010101;
   --light: #e3f8f8;
   --neutral-100: #;
@@ -165,4 +168,14 @@ header.transparent {
 
 #scrollToTop.show {
   opacity: 1;
+}
+
+/* =========================
+
+/* User Feedback
+
+/* ======================== */
+
+.warning-message {
+  color: var(--error);
 }

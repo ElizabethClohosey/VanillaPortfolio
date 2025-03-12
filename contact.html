@@ -28,9 +28,11 @@
         <button id="home-btn">Home</button>
       </header>
       <main>
+        <!-- <div class="clouds"></div> -->
+        <!-- <div class="twinkling"></div> -->
         <section id="contact">
           <section class="section-container">
-            <img class="section-title" src="./assets/images/contact-me.svg" />
+            <img class="section-title" src="./assets/images/contact-me_2.svg" />
             <div class="form-wrapper">
               <form
                 class="contact-form"
@@ -50,7 +52,13 @@
 
                 <div class="chroma-input">
                   <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
+                  <textarea
+                    id="message"
+                    name="message"
+                    maxlength="500"
+                    required
+                  ></textarea>
+                  <span id="char-count">500/500 characters remaining</span>
                 </div>
 
                 <button type="submit">Send Message</button>

@@ -1,6 +1,6 @@
 #about {
-  background: #000 url("../assets/images/unfoldTheUniverse.webp")
-    no-repeat center center;
+  background: #000 url("../assets/images/unfoldTheUniverse.webp") no-repeat
+    center center;
   backdrop-filter: blur(5px);
   background-size: cover;
   padding: var(--xl-space) 0;
@@ -20,10 +20,6 @@
   z-index: 1;
 }
 
-.developing {
-  background: black;
-}
-
 #about > .section-container > .developing,
 .sub-about {
   background: black;
@@ -37,5 +33,5 @@
   margin-bottom: var(--lg-space);
   text-decoration: underline;
   text-decoration-color: transparent;
-  text-shadow: 0px 3px 5px rgba(var(--rosy-blush-rgb), 0.7);/
+  /* text-shadow: 0px 3px 5px rgba(var(--rosy-blush-rgb), 0.7);/ */
 }

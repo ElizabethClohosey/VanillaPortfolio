@@ -19,7 +19,7 @@
   background: var(--dark);
   background: rgba(0, 0, 0, 0.7);
   z-index: 10;
-  box-shadow: 0 0 3px var(--luminous-lilac);
+  box-shadow: 0 0 3px var(--peach-light);
 }
 
 .project-card > .card-header {
@@ -27,7 +27,7 @@
   /* font-size: 98%; */
   font-size: 30px;
   /* color: var(--luminous-lilac); */
-  box-shadow: 0 3px 3px -3px var(--luminous-lilac);
+  box-shadow: 0 3px 3px -3px var(--peach-light);
   /* border-bottom: 1px solid var(--luminous-lilac); */
   margin-bottom: var(--sm-space);
 }
@@ -67,16 +67,16 @@
 }
 
 .card-footer > a {
-  color: var(--luminous-lilac);
-  border: 1px solid var(--luminous-lilac);
+  color: var(--azure-breeze);
+  border: 1px solid var(--azure-breeze);
   border-radius: 0.25rem;
-  box-shadow: 2px 1px 5px var(--luminous-lilac);
+  box-shadow: 2px 1px 5px var(--azure-breeze);
   padding: var(--sm-space);
   align-self: center;
   cursor: pointer;
   text-decoration: none;
 }
 .card-footer > a:hover {
-  background: var(--luminous-lilac);
+  background: var(--azure-breeze);
   color: black;
 }
