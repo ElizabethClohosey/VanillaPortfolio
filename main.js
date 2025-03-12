@@ -70,10 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener("click", () => {
       const isHidden = navMenu.classList.contains("hidden");
       if (isHidden) {
-        navMenu.classList.remove("hidden");
+        // navMenu.classList.remove("hidden");
         navMenu.classList.add("show");
       } else {
-        navMenu.classList.add("hidden");
+        // navMenu.classList.add("hidden");
         navMenu.classList.remove("show");
       }
     });
@@ -81,10 +81,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Close navigation menu on "x" button click
     const closeNavBtn = document.getElementById("close-nav");
     closeNavBtn.addEventListener("click", () => {
-      navMenu.classList.add("hidden");
+      // navMenu.classList.add("hidden");
       navMenu.classList.remove("show");
     });
 
-    // Close navigation menu on click anywhere else in the window
+    // Close menu when a link is clicked
+    const menuLinks = document.querySelectorAll("#nav-menu a");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+        navMenu.classList.remove("show");
+      }
+    });
   }
 });
