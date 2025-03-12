@@ -77,5 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.remove("show");
       }
     });
+
+    // Close navigation menu on "x" button click
+    const closeNavBtn = document.getElementById("close-nav");
+    closeNavBtn.addEventListener("click", () => {
+      navMenu.classList.add("hidden");
+      navMenu.classList.remove("show");
+    });
+
+    // Close navigation menu on click anywhere else in the window
   }
 });
