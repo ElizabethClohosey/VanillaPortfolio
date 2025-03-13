@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
     <link rel="shortcut icon" href="favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-touch-icon.png"
+    />
     <link rel="manifest" href="favicons/site.webmanifest" />
 
     <link rel="stylesheet" href="./styles.css" />
@@ -18,8 +27,11 @@
     ></script>
   </head>
   <body>
-    <button id="scrollToTop"><i class="fas fa-solid fa-arrow-up"></i></i></button>
+    <button id="scrollToTop"><i class="fas fa-solid fa-arrow-up"></i></button>
     <div class="wrapper home">
+      <button id="toggle-nav">
+        <i class="fas fa-solid fa-bars"></i>
+      </button>
       <header class="header">
         <!--                         -->
         <!--  HEADER: INTRO SECTION  -->
@@ -35,15 +47,12 @@
         <!--  HEADER: NAV SECTION  -->
         <!--                       -->
 
-        <button id="toggle-nav">
-          <i class="fas fa-solid fa-bars"></i>
-        </button>
         <nav id="nav-menu" class="hidden">
-          <button id="close-nav"><i class="fa-solid fa-xmark fa-2x"></i></button>
+          <!-- <button id="close-nav"><i class="fa-solid fa-xmark fa-2x"></i></button> -->
           <ul>
             <li><a class="scroll-link" href="#skills">Skills</a></li>
-            <li>   <a class="scroll-link" href="#projects">Projects</a></li>
-            <li>  <a class="scroll-link" href="#about">About Me</a></li>
+            <li><a class="scroll-link" href="#projects">Projects</a></li>
+            <li><a class="scroll-link" href="#about">About Me</a></li>
           </ul>
         </nav>
 

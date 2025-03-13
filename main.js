@@ -6,8 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Hide show header and scroll to top button on scroll
-  // let lastScrollY = window.scrollY;
   const header = document.querySelector("header");
+  // const brandName = document.getElementById("brand-name");
+
   const scrollToTopBtn = document.getElementById("scrollToTop");
 
   // Scroll event listener
@@ -16,9 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentScrollY > header.offsetHeight) {
       // Scrolling down -> Hide header
       header.classList.add("transparent");
+      // brandName.style.position = "fixed";
     } else if (currentScrollY < header.offsetHeight) {
       // Back to top -> Show header
       header.classList.remove("transparent");
+      // brandName.style.position = "static";
     }
 
     // Show/hide scroll to top button
@@ -70,20 +73,20 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener("click", () => {
       const isHidden = navMenu.classList.contains("hidden");
       if (isHidden) {
-        // navMenu.classList.remove("hidden");
+        navMenu.classList.remove("hidden");
         navMenu.classList.add("show");
       } else {
-        // navMenu.classList.add("hidden");
+        navMenu.classList.add("hidden");
         navMenu.classList.remove("show");
       }
     });
 
     // Close navigation menu on "x" button click
-    const closeNavBtn = document.getElementById("close-nav");
-    closeNavBtn.addEventListener("click", () => {
-      // navMenu.classList.add("hidden");
-      navMenu.classList.remove("show");
-    });
+    // const closeNavBtn = document.getElementById("close-nav");
+    // closeNavBtn.addEventListener("click", () => {
+    //   // navMenu.classList.add("hidden");
+    //   navMenu.classList.remove("show");
+    // });
 
     // Close menu when a link is clicked
     const menuLinks = document.querySelectorAll("#nav-menu a");
@@ -94,10 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-      if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
-        navMenu.classList.remove("show");
-      }
-    });
+    // document.addEventListener("click", (e) => {
+    //   if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+    //     navMenu.classList.remove("show");
+    //   }
+    // });
   }
 });

@@ -83,6 +83,7 @@ header.transparent {
   color: var(--azure-breeze);
   font-size: 1.5rem;
   cursor: pointer;
+  z-index: 999;
 }
 
 #contact-me-cta {
@@ -111,33 +112,101 @@ header.transparent {
   max-height: 0; /* Start collapsed */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Smooth unfolding */
-  height: 50vh;
+  height: 100vh;
 }
 
 #nav-menu.show {
-  max-height: 50vh; /* Half the viewport height */
+  max-height: 100vh; /* Half the viewport height */
 }
 
 #nav-menu #close-nav {
-  position: absolute;
-  top: var(--md-space);
-  right: var(--md-space);
+  /* position: absolute; */
+  position: relative;
+  margin: var(--md-space) var(--md-space) 0 auto;
+
+  /* top: var(--md-space); */
+  /* right: var(--md-space); */
   color: var(--azure-breeze);
 }
 
 #nav-menu ul {
   list-style: none;
-  padding: 20px;
+  position: relative;
+  height: 100vh;
+  /* padding: 20px; */
+  padding: 0px;
   margin: 0;
-  text-align: right;
+  /* text-align: right; */
 }
 
-/* #nav-menu a {
-  background: red;
-} */
+#nav-menu li {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* text-shadow: 2px 2px 4px rgba(130, 141, 29, 0.9); */
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #00f;
+  padding: 10px;
+  transform: scale(1.1);
+}
 
 #nav-menu li {
   margin: 15px 0;
+}
+
+/* Initial positions for each link */
+#nav-menu li:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation: float1 4s infinite ease-in-out;
+}
+
+#nav-menu li:nth-child(2) {
+  top: 40%;
+  left: 50%;
+  animation: float2 5s infinite ease-in-out;
+}
+
+#nav-menu li:nth-child(3) {
+  top: 60%;
+  left: 30%;
+  animation: float3 6s infinite ease-in-out;
+}
+
+/* Floating animations */
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, -10px);
+  }
+}
+
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, 15px);
+  }
+}
+
+@keyframes float3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 5px);
+  }
 }
 
 #nav-menu a {
