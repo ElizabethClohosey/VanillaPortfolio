@@ -5,23 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.assign("./contact.html");
   };
 
-  // Hide show header and scroll to top button on scroll
-  const header = document.querySelector("header");
-  // const brandName = document.getElementById("brand-name");
+  // Hide show header action section and scroll to top button on scroll
+  const introSection = document.querySelector(".intro-section");
+  const actionSection = document.querySelector(".action-section");
+  // Store the original background color at the start
+  const originalBackground = getComputedStyle(introSection).background;
 
   const scrollToTopBtn = document.getElementById("scrollToTop");
 
   // Scroll event listener
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
-    if (currentScrollY > header.offsetHeight) {
-      // Scrolling down -> Hide header
-      header.classList.add("transparent");
-      // brandName.style.position = "fixed";
-    } else if (currentScrollY < header.offsetHeight) {
-      // Back to top -> Show header
-      header.classList.remove("transparent");
-      // brandName.style.position = "static";
+    if (currentScrollY > actionSection.offsetHeight) {
+      // Scrolling down -> Hide action section and update intro section bg color
+      actionSection.classList.add("transparent");
+      introSection.style.background = "black";
+    } else if (currentScrollY < actionSection.offsetHeight) {
+      // Back to top -> Show action section and reset bg color
+      actionSection.classList.remove("transparent");
+      introSection.style.background = originalBackground;
     }
 
     // Show/hide scroll to top button
@@ -30,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       scrollToTopBtn.classList.remove("show");
     }
-
-    // lastScrollY = currentScrollY;
   });
 
   // Scroll to top on button click

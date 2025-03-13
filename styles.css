@@ -51,15 +51,16 @@
   background-size: cover;
 }
 
-/* ===================
+/* =======================
 
-/* Header 
+/* Header:  Intro Section
+   (Intro and Navigation)
 
-/* =================== */
-header.transparent {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px); /* Moves it slightly up for a natural effect */
+/* ======================= */
+
+header > .intro-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: var(--md-space);
 }
 
 .intro-section > img {
@@ -69,37 +70,17 @@ header.transparent {
 .intro-section > p {
   margin-top: -10px;
   font-size: calc(0.4rem + 1vw);
-  /* font-weight: 600; */
-  color: var(--azure-breeze);
   color: var(--darkThemeText);
 }
 
 #toggle-nav {
-  position: absolute;
+  position: fixed;
   top: var(--md-space);
   right: var(--md-space);
-  background: none;
-  border: none;
   color: var(--azure-breeze);
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 999;
-}
-
-#contact-me-cta {
-  padding: var(--sm-space);
-  border-radius: 0.25rem;
-  border: 1px solid var(--azure-breeze);
-  background: black;
-  box-shadow: 2px 1px 5px var(--azure-breeze);
-  color: var(--azure-breeze);
-  margin: var(--lg-space) auto;
-  cursor: pointer;
-}
-
-#contact-me-cta:hover {
-  background-color: var(--azure-breeze);
-  color: black;
 }
 
 #nav-menu {
@@ -112,31 +93,21 @@ header.transparent {
   max-height: 0; /* Start collapsed */
   overflow: hidden;
   transition: max-height 0.5s ease-in-out; /* Smooth unfolding */
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #nav-menu.show {
-  max-height: 100vh; /* Half the viewport height */
-}
-
-#nav-menu #close-nav {
-  /* position: absolute; */
-  position: relative;
-  margin: var(--md-space) var(--md-space) 0 auto;
-
-  /* top: var(--md-space); */
-  /* right: var(--md-space); */
-  color: var(--azure-breeze);
+  max-height: 100vh;
+  z-index: 998;
+  overflow: hidden;
 }
 
 #nav-menu ul {
   list-style: none;
   position: relative;
   height: 100vh;
-  /* padding: 20px; */
   padding: 0px;
   margin: 0;
-  /* text-align: right; */
 }
 
 #nav-menu li {
@@ -149,7 +120,6 @@ header.transparent {
   display: block;
   font-size: 1.2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* text-shadow: 2px 2px 4px rgba(130, 141, 29, 0.9); */
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #00f;
   padding: 10px;
   transform: scale(1.1);
@@ -162,19 +132,19 @@ header.transparent {
 /* Initial positions for each link */
 #nav-menu li:nth-child(1) {
   top: 20%;
-  left: 10%;
+  left: 30%;
   animation: float1 4s infinite ease-in-out;
 }
 
 #nav-menu li:nth-child(2) {
-  top: 40%;
-  left: 50%;
+  top: 35%;
+  right: 20%;
   animation: float2 5s infinite ease-in-out;
 }
 
 #nav-menu li:nth-child(3) {
   top: 60%;
-  left: 30%;
+  left: 50%;
   animation: float3 6s infinite ease-in-out;
 }
 
@@ -219,21 +189,54 @@ header.transparent {
   text-decoration: underline;
 }
 
+/* =======================
+
+/* Header:  Action Section
+
+/* ======================= */
+
+header > .action-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  padding: var(--md-space);
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+header > .action-section.transparent {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px); /* Moves it slightly up for a natural effect */
+}
+
+#contact-me-cta {
+  padding: var(--sm-space);
+  border-radius: 0.25rem;
+  border: 1px solid var(--azure-breeze);
+  background: black;
+  box-shadow: 2px 1px 5px var(--azure-breeze);
+  color: var(--azure-breeze);
+  /* margin: var(--lg-space) auto; */
+  align-self: start;
+  cursor: pointer;
+}
+
+#contact-me-cta:hover {
+  background-color: var(--azure-breeze);
+  color: black;
+}
+
 .social-icons {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: center;
-  margin-top: calc(
-    -1 * min(4vw, 70px)
-  ); /* Negative margin scales with viewport */
-  margin-top: calc(-1 * min(100vw, 50px));
 }
 
 .social-icons > a {
   font-size: 0.75rem;
   color: var(--azure-breeze);
-  margin: var(--md-space) 0;
+  margin-bottom: var(--md-space);
   max-width: 20px;
   cursor: pointer;
 }
