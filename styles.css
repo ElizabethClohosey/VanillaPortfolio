@@ -12,13 +12,16 @@
 
 :root {
   /* Theme  */
-  /* --rosy-blush: #fea6cc; */
-  --rosy-blush-rgb: 254, 164, 203;
-  --rosy-blush: #fea6cc;
-  --azure-breeze: #3f99d2;
+  --sky-frost: #e5f5ff;
+  --sunset-haze: #ffe9db;
   --peach-light: #ffd4b9;
-  --magenta: #b53da1;
+  --rosy-blush: #fea6cc;
+  --orchid-glow: #e0bbf8;
+  --crystal-blue: #99d5fa;
+  --rose-amethyst: #d383c8;
   --luminous-lilac: #a483d3;
+  --azure-breeze: #3f99d2;
+  --magenta: #b53da1;
   --royal-purple: #642aa5;
   --electric-indigo: #4321a9;
   --cosmic-navy: #140655;
@@ -28,14 +31,18 @@
 
   --dark: #010101;
   --light: #e3f8f8;
-  --neutral-100: #;
-  --neutral: #;
-  --neutral-300: #;
-  --neutral-600: #131313;
-  --neutral-700: #040404;
+  --neutral-100: #f2f2f2;
+  --neutral-200: #d9d9d9;
+  --neutral-300: #cfcfcf;
+  --neutral-400: #9c9c9c;
+  --neutral-500: #828282;
+  --neutral-600: #666666;
+  --neutral-700: #4d4d4d;
+  --neutral-800: #333333;
+  --neutral-900: #262626;
 
-  --darkThemeText: #ffffffb3;
-  --lightThemeText: #;
+  --darkThemeText: var(--sky-frost);
+  --lightThemeText: var(--cosmic-navy);
 
   /* Spacing  */
   --xs-space: 0.15rem;

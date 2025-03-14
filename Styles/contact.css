@@ -62,10 +62,11 @@ textarea {
   background: var(--neutral-600);
   color: var(--darkThemeText);
   border: none;
-  border: 1px solid var(--peach-light);
+  border: 0.5px solid var(--peach-light);
   border-radius: 0.2rem;
   outline: none;
   padding-left: var(--sm-space);
+  font-size: 16px;
 }
 
 input:focus,
