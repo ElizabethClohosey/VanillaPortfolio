@@ -1,5 +1,5 @@
 #skills {
-  padding: var(--xl-space) 0;
+  /* padding: var(--xl-space) 0; */
   backdrop-filter: blur(5px);
 }
 
@@ -8,10 +8,15 @@
   text-align: center;
 }
 
+#skills > .section-title {
+  height: 5rem;
+}
+
 .skills-1,
 .skills-2 {
+  background: black;
   display: flex;
-  padding: var(--sm-space);
+  padding: var(--md-space);
   justify-content: space-around;
 }
 
@@ -27,4 +32,19 @@
   box-shadow: 0px 0px 5px var(--peach-light);
   height: 60px;
   width: 60px;
+}
+@media screen and (max-width: 992px) {
+  #skills i {
+    font-size: calc(0.75em + 0.75vw);
+    background: black;
+    color: var(--peach-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 0px 5px var(--peach-light);
+    height: 20px;
+    width: 20px;
+  }
 }
