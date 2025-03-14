@@ -21,6 +21,8 @@
   background: black;
   box-shadow: 2px 1px 5px var(--azure-breeze);
   color: var(--azure-breeze);
+
+  z-index: 90;
 }
 
 #home-btn:hover {
