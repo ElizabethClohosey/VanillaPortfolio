@@ -58,12 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Attach to link click events
+  const contactLink = document.querySelector('li a[href="./contact.html"]');
+
   document.querySelectorAll("a.scroll-link").forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = this.getAttribute("href");
-      scrollToElement(target);
-    });
+    if (!contactLink) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = this.getAttribute("href");
+        scrollToElement(target);
+      });
+    }
   });
 
   // Toggle main navigation

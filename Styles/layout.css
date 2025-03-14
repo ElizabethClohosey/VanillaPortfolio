@@ -1,6 +1,9 @@
 /* ======================= */
 /*    Dynamic Layout       */
 /* ======================= */
+html {
+  scroll-padding-top: 80px;
+}
 
 body {
   padding-bottom: calc(
