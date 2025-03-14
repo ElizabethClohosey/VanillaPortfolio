@@ -1,6 +1,9 @@
 /* ======================= */
 /*    Dynamic Layout       */
 /* ======================= */
+html {
+  scroll-padding-top: 80px;
+}
 
 body {
   padding-bottom: calc(
@@ -12,6 +15,10 @@ body {
   color: var(--darkThemeText);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: black;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .wrapper {

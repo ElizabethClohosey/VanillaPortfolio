@@ -58,12 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Attach to link click events
+  const contactLink = document.querySelector('li a[href="./contact.html"]');
+
   document.querySelectorAll("a.scroll-link").forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = this.getAttribute("href");
-      scrollToElement(target);
-    });
+    if (!contactLink) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = this.getAttribute("href");
+        scrollToElement(target);
+      });
+    }
   });
 
   // Toggle main navigation
@@ -75,24 +79,20 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isHidden) {
         navMenu.classList.remove("hidden");
         navMenu.classList.add("show");
+        document.body.classList.toggle("no-scroll");
       } else {
         navMenu.classList.add("hidden");
         navMenu.classList.remove("show");
+        document.body.classList.remove("no-scroll");
       }
     });
-
-    // Close navigation menu on "x" button click
-    // const closeNavBtn = document.getElementById("close-nav");
-    // closeNavBtn.addEventListener("click", () => {
-    //   // navMenu.classList.add("hidden");
-    //   navMenu.classList.remove("show");
-    // });
 
     // Close menu when a link is clicked
     const menuLinks = document.querySelectorAll("#nav-menu a");
     menuLinks.forEach((link) => {
       link.addEventListener("click", () => {
         navMenu.classList.remove("show");
+        document.body.classList.remove("no-scroll");
       });
     });
 
