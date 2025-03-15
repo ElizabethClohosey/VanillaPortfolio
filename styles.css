@@ -52,6 +52,10 @@
   --xl-space: 3rem;
 }
 
+::selection {
+  background: var(--electric-indigo);
+}
+
 .wrapper.home {
   background: #000 url("./assets/images/unfoldTheUniverse.webp") no-repeat top
     center;
@@ -280,6 +284,7 @@ header > .action-section.transparent {
   }
   50% {
     box-shadow: 0 0 20px var(--azure-breeze); /* Peak glow */
+    transform: scale(1.1);
   }
   100% {
     box-shadow: 0 0 5px var(--azure-breeze); /* Back to start */
