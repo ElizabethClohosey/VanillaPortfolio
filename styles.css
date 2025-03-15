@@ -41,7 +41,8 @@
   --neutral-800: #333333;
   --neutral-900: #262626;
 
-  --darkThemeText: var(--sky-frost);
+  /* --darkThemeText: var(--sky-frost); */
+  --darkThemeText: var(--neutral-300);
   --lightThemeText: var(--cosmic-navy);
 
   /* Spacing  */
@@ -284,7 +285,6 @@ header > .action-section.transparent {
   }
   50% {
     box-shadow: 0 0 20px var(--azure-breeze); /* Peak glow */
-    transform: scale(1.1);
   }
   100% {
     box-shadow: 0 0 5px var(--azure-breeze); /* Back to start */

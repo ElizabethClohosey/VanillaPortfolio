@@ -3,7 +3,7 @@
     center center;
   backdrop-filter: blur(5px);
   background-size: cover;
-  padding: var(--xl-space) 0;
+  /* padding: var(--xl-space) 0; */
 }
 
 #about::before {

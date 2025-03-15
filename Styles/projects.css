@@ -5,45 +5,82 @@
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   background-position: center;
-  padding: var(--xl-space) 0;
+  /* padding: var(--xl-space) 0; */
 }
 
 #projects > section > div:nth-child(odd) {
   margin-left: auto;
 }
 
+.project-card:nth-of-type(odd) {
+  background: rgb(224, 187, 248);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 187, 248, 0.3) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+
+.project-card:nth-of-type(even) {
+  background: rgb(255, 212, 185);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 212, 185, 0.3) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+
 .project-card {
   max-width: 350px;
   text-align: center;
   margin: var(--xl-space) 0;
-  background: var(--dark);
-  background: rgba(0, 0, 0, 0.7);
+  border-radius: 1.5rem;
   z-index: 10;
-  box-shadow: 0 0 3px var(--peach-light);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
 }
 
 .project-card > .card-header {
   padding: var(--lg-space) 0;
-  /* font-size: 98%; */
-  font-size: 30px;
-  /* color: var(--luminous-lilac); */
-  box-shadow: 0 3px 3px -3px var(--peach-light);
-  /* border-bottom: 1px solid var(--luminous-lilac); */
-  margin-bottom: var(--sm-space);
 }
 
 .project-card .project-img {
+  border-radius: 1.5rem;
+  background: black;
   max-height: 150px;
   max-width: 150px;
 }
 
-/* .project-title {
-  margin: 0 auto;
-} */
+.project-card:nth-of-type(odd) img {
+  box-shadow: 0 0 3px var(--luminous-lilac);
+}
+
+.project-card:nth-of-type(even) img {
+  box-shadow: 0 0 3px var(--peach-light);
+}
+
+.project-card > .card-body {
+  background: black;
+}
+
+.project-card:nth-of-type(odd) .card-body > h3 {
+  color: var(--orchid-glow);
+  text-shadow: 0 0 15px var(--luminous-lilac);
+}
+
+.project-card:nth-of-type(even) .card-body > h3 {
+  color: var(--sunset-haze);
+  text-shadow: 0 0 15px var(--peach-light);
+}
 
 .project-card .project-description {
   padding: var(--sm-space);
   font-size: 0.75em;
+  text-align: left;
 }
 
 #authcore-see-more,
@@ -58,15 +95,11 @@
 .project-card > .card-footer {
   display: flex;
   justify-content: space-between;
-  background: var(--dark);
   padding: var(--md-space);
 }
 
-.project-card > .card-footer p {
-  padding: var(--sm-space);
-}
-
 .card-footer > a {
+  background: black;
   color: var(--azure-breeze);
   border: 1px solid var(--azure-breeze);
   border-radius: 0.25rem;
@@ -75,7 +108,9 @@
   align-self: center;
   cursor: pointer;
   text-decoration: none;
+  width: 100%;
 }
+
 .card-footer > a:hover {
   background: var(--azure-breeze);
   color: black;
