@@ -1,5 +1,4 @@
 .main-parallax {
-  /* background-image: url("../assets//images/Parallax/plethoraOfCarbonMolecules.jpg"); */
   background-image: url("../assets//images/parallax/plethoraOfCarbonMolecules.webp");
   min-height: 300px;
   width: 100%;
@@ -17,7 +16,6 @@
 }
 
 .hobbies-parallax {
-  /* background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis-2.webp"); */
   background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis.webp");
   min-height: 300px;
 
@@ -31,7 +29,6 @@
 }
 
 .end-about-parallax {
-  /* background-image: url("../assets/images/FinalParallax/A-vibrant-Aurora-Borealis-2.webp"); */
   background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis-2.webp");
   min-height: 600px;
 
@@ -54,8 +51,30 @@
     background-size: cover; /* Stretch image to fill */
     background-repeat: no-repeat; /* Prevent tiling */
   }
+}
 
-  /* .hobbies-parallax:nth-of-type(2) {
-    display: none;
-  } */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in,
+.fade-in-left,
+.fade-in-right {
+  opacity: 0;
+  transition: opacity 1s ease-in, transform 0.5s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(-25px);
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(25px);
 }
