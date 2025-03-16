@@ -4,7 +4,7 @@
 }
 
 .skills-container {
-  padding: var(--lg-space);
+  padding: var(--xl-space) 0;
   text-align: center;
 }
 
