@@ -3,7 +3,7 @@
     center center;
   backdrop-filter: blur(5px);
   background-size: cover; */
-  padding: var(--xl-space) 0 0;
+  padding: var(--lg-space) 0 0;
   background: black;
 }
 
@@ -12,15 +12,28 @@
   z-index: 1;
 }
 
+#about .section-title {
+  margin-bottom: var(--lg-space);
+}
+
+#about .developing,
+.sub-about {
+  padding: var(--md-space);
+  /* margin: var(--xl-space) 0 0; */
+  margin: 0 0 var(--lg-space);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px var(--peach-light);
+  text-align: left;
+}
+
 .animated-border {
   position: relative;
-  display: inline-block;
-  padding: 10px 20px;
+  /* display: inline-block; */
   /* color: white; */
   /* font-size: 16px; */
-  text-align: center;
+  /* text-align: center; */
   background-color: black; /* Keep the actual background */
-  border-radius: 0.25rem;
+  /* border-radius: 10px; */
   z-index: 1;
 }
 
@@ -35,9 +48,9 @@
   padding: 2px; /* Creates the border effect */
   /* background: linear-gradient(45deg, #a483d3, #6d3eff, #a483d3); */
   background: linear-gradient(
-    45deg,
-    var(--peach-light),
+    90deg,
     var(--luminous-lilac),
+    var(--peach-light),
     var(--azure-breeze)
   );
   background-size: 200% 200%;
@@ -67,11 +80,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-.sub-about {
-  padding: var(--md-space);
-  margin: var(--xl-space) 0 0;
-  border-radius: 0.25rem;
-  box-shadow: 0 0 5px var(--peach-light);
 }

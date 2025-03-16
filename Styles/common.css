@@ -58,9 +58,7 @@
   animation: fadeIn 1s ease-in forwards;
 }
 
-.fade-in,
-.fade-in-left,
-.fade-in-right {
+.fade-in {
   opacity: 0;
   transition: opacity 1s ease-in, transform 0.5s ease-in;
 }
@@ -69,12 +67,20 @@
   opacity: 1;
 }
 
-.fade-in-left.visible {
-  opacity: 1;
-  transform: translateX(-25px);
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(25px); /* Start completely off-screen */
+  transition: opacity 0.8s ease-in, transform 0.8s ease-in;
 }
 
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(-25px); /* Start completely off-screen */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-left.visible,
 .fade-in-right.visible {
   opacity: 1;
-  transform: translateX(25px);
+  transform: translateX(0); /* Moves to original position */
 }

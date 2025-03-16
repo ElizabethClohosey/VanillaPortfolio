@@ -5,7 +5,11 @@
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   background-position: center;
-  padding: var(--xl-space) 0 0;
+  padding: var(--lg-space) 0 0;
+}
+
+#projects .section-title {
+  margin-bottom: var(--lg-space);
 }
 
 #projects > section > div:nth-child(odd) {
@@ -33,7 +37,7 @@
 .project-card {
   max-width: 350px;
   text-align: center;
-  margin: var(--xl-space) 0;
+  margin: 0 0 var(--lg-space);
   border-radius: 1.5rem;
   z-index: 10;
   background: rgb(255, 255, 255);
