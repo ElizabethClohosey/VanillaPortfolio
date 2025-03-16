@@ -1,11 +1,11 @@
 .wrapper.contact {
-  background-image: url("../assets/images/stars_with_clouds.webp");
+  background-image: url("../assets/images/projects/stars.webp");
   background-position: center center;
   background-size: cover;
 }
 
 #contact {
-  padding: var(--xl-space) 0;
+  padding: var(--lg-space) 0 0;
 }
 
 #home-btn {
@@ -33,17 +33,27 @@
 .form-wrapper {
   margin: var(--lg-space) auto;
   max-width: 1140px;
-  padding: var(--lg-space);
-  background: rgba(0, 0, 0, 0.7);
+  padding: var(--lg-space) var(--md-space) 0;
+  background: var(--dark);
+  border-radius: 0.25rem;
+
+  background: rgb(255, 212, 185);
+  background: linear-gradient(
+    205deg,
+    rgba(255, 212, 185, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 30%
+  );
+  box-shadow: 0 0px 20px rgba(255, 212, 185, 0.4);
+}
+
+#contact .section-title {
+  margin-bottom: var(--lg-space);
 }
 
 form {
-  width: 90%;
+  border-radius: 0.25rem;
   max-width: 420px;
   margin: auto;
-  padding: var(--md-space);
-  background: var(--neutral-700);
-  border-radius: 8px;
 }
 
 .chroma-input {
@@ -59,10 +69,10 @@ input,
 textarea {
   width: 100%;
   max-width: 100%;
-  background: var(--neutral-600);
+  background: var(--dark);
   color: var(--darkThemeText);
   border: none;
-  border: 0.5px solid var(--peach-light);
+  border: 1px solid var(--neutral-700);
   border-radius: 0.2rem;
   outline: none;
   padding-left: var(--sm-space);
@@ -96,7 +106,7 @@ textarea {
 }
 
 button[type="submit"] {
-  padding: var(--sm-space);
+  padding: var(--md-space);
   border-radius: 0.25rem;
   border: 1px solid var(--azure-breeze);
   background: black;
@@ -104,6 +114,7 @@ button[type="submit"] {
   color: var(--azure-breeze);
   margin: var(--lg-space) auto;
   cursor: pointer;
+  width: 100%;
 }
 
 button[type="submit"]:hover {
