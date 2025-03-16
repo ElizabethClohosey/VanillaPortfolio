@@ -44,13 +44,13 @@
   ); */
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 580px) {
   .project-card {
     margin: 0 0 var(--lg-space);
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 580px) {
   #projects > section > .project-card:nth-child(odd) {
     margin-left: auto;
   }
