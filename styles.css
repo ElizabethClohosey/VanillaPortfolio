@@ -14,13 +14,13 @@
   /* Theme  */
   --sky-frost: #e5f5ff;
   --sunset-haze: #ffe9db;
-  --peach-light: #ffd4b9;
+  --peach-light: #ffd4b9; /* *** */
   --rosy-blush: #fea6cc;
   --orchid-glow: #e0bbf8;
   --crystal-blue: #99d5fa;
   --rose-amethyst: #d383c8;
-  --luminous-lilac: #a483d3;
-  --azure-breeze: #3f99d2;
+  --luminous-lilac: #a483d3; /* *** */
+  --azure-breeze: #3f99d2; /* *** */
   --magenta: #b53da1;
   --royal-purple: #642aa5;
   --electric-indigo: #4321a9;
