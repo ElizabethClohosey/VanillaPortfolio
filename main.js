@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const section = entry.target;
-        section.style.backgroundImage = `url(${repoBase}${section.dataset.bg})`;
+        console.log(section.dataset.bg);
+        console.log(`url(${repoBase}${section.dataset.bg})`);
+        section.style.backgroundImage = `url("${repoBase}${section.dataset.bg}")`;
         observer.unobserve(section);
       }
     });
