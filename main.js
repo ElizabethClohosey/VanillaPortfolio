@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(section.dataset.bg);
         console.log(`url(${repoBase}${section.dataset.bg})`);
         section.style.backgroundImage = `url("${repoBase}${section.dataset.bg}")`;
+        // section.style.backgroundImage = `url("${section.dataset.bg}")`;
         observer.unobserve(section);
       }
     });
