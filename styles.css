@@ -6,10 +6,6 @@
 @import "./Styles/common.css";
 @import "./Styles/contact.css";
 
-/* Animations */
-@import "./Styles/animations/clouds.css";
-@import "./Styles/animations/twinkling-stars.css";
-
 :root {
   /* Theme  */
   --sky-frost: #e5f5ff;

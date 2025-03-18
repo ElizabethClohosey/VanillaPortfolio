@@ -1,5 +1,5 @@
 .main-parallax {
-  background-image: url("../assets//images/parallax/plethoraOfCarbonMolecules.webp");
+  background-image: url("../assets/images/parallax/plethoraOfCarbonMolecules.webp");
   min-height: 300px;
   width: 100%;
   margin: auto;
@@ -16,7 +16,7 @@
 }
 
 .hobbies-parallax {
-  background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis.webp");
+  /* background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis.webp"); */
   min-height: 300px;
 
   /* Create the parallax scrolling effect */
@@ -29,7 +29,7 @@
 }
 
 .end-about-parallax {
-  background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis-2.webp");
+  /* background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis-2.webp"); */
   min-height: 600px;
 
   /* Create the parallax scrolling effect */
@@ -69,13 +69,13 @@
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(25px); /* Start completely off-screen */
+  transform: translateX(15px); /* Start completely off-screen */
   transition: opacity 0.8s ease-in, transform 0.8s ease-in;
 }
 
 .fade-in-right {
   opacity: 0;
-  transform: translateX(-25px); /* Start completely off-screen */
+  transform: translateX(-15px); /* Start completely off-screen */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 

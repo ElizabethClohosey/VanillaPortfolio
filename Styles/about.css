@@ -5,6 +5,7 @@
   background-size: cover; */
   padding: var(--lg-space) 0 0;
   background: black;
+  /* overflow-x: hidden; */
 }
 
 #about > * {
