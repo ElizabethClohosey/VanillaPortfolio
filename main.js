@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Lazy load
   const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
   const repoBase = "/elizabethclohosey.github.io/VanillaPortfolio/";
+  console.log("repo base: ", repoBase);
 
   const lazyObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
