@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Lazy load
   const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+  const repoBase = "/elizabethclohosey.github.io/VanillaPortfolio/";
 
   const lazyObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const section = entry.target;
-        section.style.backgroundImage = `url(${section.dataset.bg})`;
+        section.style.backgroundImage = `url(${repoBase}${section.dataset.bg})`;
         observer.unobserve(section);
       }
     });
