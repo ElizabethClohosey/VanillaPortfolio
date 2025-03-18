@@ -13,19 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   lazyBackgrounds.forEach((bg) => lazyObserver.observe(bg));
-  // const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
 
-  // const bgObserver = new IntersectionObserver((entries, obs) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       const bg = entry.target;
-  //       bg.style.backgroundImage = `url(${bg.dataset.bg})`;
-  //       obs.unobserve(bg);
-  //     }
-  //   });
-  // });
-
-  // lazyBackgrounds.forEach((bg) => bgObserver.observe(bg));
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    console.log(img, img.complete);
+  });
 
   // Navigate to contact page on click
   const contactMeBtn = document.getElementById("contact-me-cta");
