@@ -1,4 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Lazy load
+  const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+
+  const lazyObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const section = entry.target;
+        section.style.backgroundImage = `url(${section.dataset.bg})`;
+        observer.unobserve(section);
+      }
+    });
+  });
+
+  lazyBackgrounds.forEach((bg) => lazyObserver.observe(bg));
+  // const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+
+  // const bgObserver = new IntersectionObserver((entries, obs) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       const bg = entry.target;
+  //       bg.style.backgroundImage = `url(${bg.dataset.bg})`;
+  //       obs.unobserve(bg);
+  //     }
+  //   });
+  // });
+
+  // lazyBackgrounds.forEach((bg) => bgObserver.observe(bg));
+
   // Navigate to contact page on click
   const contactMeBtn = document.getElementById("contact-me-cta");
   contactMeBtn.onclick = function () {
@@ -111,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log("entry: ", entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
         }

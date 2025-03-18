@@ -1,7 +1,7 @@
 #projects {
   position: relative;
   background: var(--dark);
-  background-image: url("../assets/images/projects/stars.webp");
+  /* background-image: url("../assets/images/projects/stars.webp"); */
   /* background-image: url("../assets/images/stars_test.webp"); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
