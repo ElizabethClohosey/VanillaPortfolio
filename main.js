@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // const repoBase = "/VanillaPortfolio/";
   // console.log("repo base: ", repoBase);
 
-  const repoBase = "VanillaPortfolio";
-  console.log("repo base: ", repoBase);
-  const basePath =
-    window.location.hostname === "localhost" ? "" : `/${repoBase}`;
+  // const repoBase = "VanillaPortfolio";
+  // console.log("repo base: ", repoBase);
+  // const basePath =
+  //   window.location.hostname === "localhost" ? "" : `/${repoBase}`;
 
   const lazyObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const section = entry.target;
         console.log(section.dataset.bg);
-        console.log(`url(${basePath}/${section.dataset.bg}`);
+        // console.log(`url(${basePath}/${section.dataset.bg}`);
         // section.style.backgroundImage = `url(${basePath}/${section.dataset.bg})`;
         // section.style.backgroundImage = `url("${repoBase}${section.dataset.bg}")`;
         section.style.backgroundImage = `url("${section.dataset.bg}")`;
