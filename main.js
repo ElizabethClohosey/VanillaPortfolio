@@ -54,17 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  function scrollToElement(target) {
-    const header = document.querySelector(".header");
-    const headerOffset = header.offsetHeight;
-
+  function scrollToElement(target, offsetElement) {
     // Get the target element's top offset relative to the document
     const targetElement = document.querySelector(target);
-    if (!targetElement) return;
     const elementPosition = targetElement.offsetTop;
+    if (!targetElement || !offsetElement) return;
 
-    // Calculate the position accounting for the header height
-    const offsetPosition = elementPosition - headerOffset;
+    // Calculate the position accounting for the element height
+    const offsetPosition = elementPosition - offsetElement;
 
     window.scrollTo({
       top: offsetPosition,
@@ -73,16 +70,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Attach to link click events
-  const contactLink = document.querySelector('li a[href="./contact.html"]');
-
   document.querySelectorAll("a.scroll-link").forEach((link) => {
-    if (!contactLink) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = this.getAttribute("href");
-        scrollToElement(target);
-      });
-    }
+    // const header = document.querySelector(".header");
+    // const headerOffset = header.offsetHeight;
+    const introSection = document.querySelector(".intro-section");
+    const introSectionOffset = introSection.offsetHeight;
+    let offsetElement;
+
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      // If it's not an internal anchor, let it behave normally
+      if (!href || !href.startsWith("#")) return;
+
+      e.preventDefault();
+      let target = this.hash;
+
+      // Scroll to top when navigating to the #skills section, otherwise scroll to the target element
+      if (target === "#skills") {
+        // offsetElement = headerOffset + "10px";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        offsetElement = introSectionOffset;
+      }
+
+      scrollToElement(target, offsetElement);
+    });
   });
 
   // Toggle main navigation
@@ -107,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuLinks.forEach((link) => {
       link.addEventListener("click", () => {
         navMenu.classList.remove("show");
+        navMenu.classList.add("hidden");
         document.body.classList.remove("no-scroll");
       });
     });
