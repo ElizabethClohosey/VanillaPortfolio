@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   //Navigate Home
-  const homeBtn = document.getElementById("home-btn");
-  homeBtn.onclick = function () {
-    window.location.assign("./index.html");
-  };
+  // const homeBtn = document.getElementById("home-btn");
+  // homeBtn.onclick = function () {
+  //   window.location.assign("./index.html");
+  // };
 
   // Enforces max character limit with dynamic counter, auto-resize, and visual cues
   const maxChars = 500;

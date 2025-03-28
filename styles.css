@@ -270,13 +270,8 @@ header > .action-section.transparent {
 #contact-me-cta {
   padding: var(--md-space);
   border-radius: 0.25rem;
-  border: 1px solid var(--azure-breeze);
-  background: black;
-  box-shadow: 2px 1px 5px var(--azure-breeze);
-  color: var(--azure-breeze);
   margin: var(--lg-space) auto;
   align-self: center;
-  cursor: pointer;
   animation: glow 1.5s infinite ease-in-out; /* Glow animation */
 }
 
