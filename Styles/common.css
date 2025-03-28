@@ -84,3 +84,49 @@
   opacity: 1;
   transform: translateX(0); /* Moves to original position */
 }
+
+/* =========================
+
+/* Global Button Styles
+
+/* ======================== */
+#home-btn {
+  position: absolute;
+  top: var(--md-space);
+  right: var(--md-space);
+  z-index: 90;
+}
+
+.link-btn {
+  text-decoration: none;
+  z-index: 90;
+  padding: var(--sm-space);
+  border-radius: 0.25rem;
+}
+
+.btn-azure {
+  color: var(--azure-breeze);
+  border: 1px solid var(--azure-breeze);
+  background: black;
+  box-shadow: 2px 1px 5px var(--azure-breeze);
+  color: var(--azure-breeze);
+}
+
+.btn-azure:hover {
+  background-color: var(--azure-breeze);
+  color: black;
+}
+
+a {
+  color: var(--crystal-blue);
+  font-weight: 800;
+}
+
+a:hover {
+  color: var(--azure-breeze);
+}
+
+.photo-cred,
+.version {
+  font-size: 10px;
+}

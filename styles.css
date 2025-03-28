@@ -5,6 +5,7 @@
 @import "./Styles/about.css";
 @import "./Styles/common.css";
 @import "./Styles/contact.css";
+@import "./Styles/photo-credit.css";
 
 :root {
   /* Theme  */
@@ -46,7 +47,8 @@
   --sm-space: 0.25rem;
   --md-space: 0.5rem;
   --lg-space: 1rem;
-  --xl-space: 3rem;
+  --xl-space: 2rem;
+  --xxl-space: 3rem;
 }
 
 ::selection {
@@ -54,8 +56,8 @@
 }
 
 .wrapper.home {
-  background: #000 url("./assets/images/unfoldTheUniverse.webp") no-repeat top
-    center;
+  background: #000 url("./assets/images/spiderwebPhotoclusterField.webp")
+    no-repeat top center;
   background-size: cover;
 }
 
@@ -270,13 +272,8 @@ header > .action-section.transparent {
 #contact-me-cta {
   padding: var(--md-space);
   border-radius: 0.25rem;
-  border: 1px solid var(--azure-breeze);
-  background: black;
-  box-shadow: 2px 1px 5px var(--azure-breeze);
-  color: var(--azure-breeze);
   margin: var(--lg-space) auto;
   align-self: center;
-  cursor: pointer;
   animation: glow 1.5s infinite ease-in-out; /* Glow animation */
 }
 
