@@ -54,8 +54,8 @@
 }
 
 .wrapper.home {
-  background: #000 url("./assets/images/unfoldTheUniverse.webp") no-repeat top
-    center;
+  background: #000 url("./assets/images/spiderwebPhotoclusterField.webp")
+    no-repeat top center;
   background-size: cover;
 }
 

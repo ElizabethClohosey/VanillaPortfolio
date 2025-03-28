@@ -90,6 +90,13 @@
 /* Global Button Styles
 
 /* ======================== */
+#home-btn {
+  position: absolute;
+  top: var(--md-space);
+  right: var(--md-space);
+  z-index: 90;
+}
+
 .link-btn {
   text-decoration: none;
   z-index: 90;
@@ -108,4 +115,12 @@
 .btn-azure:hover {
   background-color: var(--azure-breeze);
   color: black;
+}
+
+.photo-cred {
+  color: var(--crystal-blue);
+}
+
+.photo-cred:hover {
+  color: var(--azure-breeze);
 }

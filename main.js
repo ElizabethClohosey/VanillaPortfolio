@@ -14,12 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   lazyBackgrounds.forEach((bg) => lazyObserver.observe(bg));
 
-  // Navigate to contact page on click
-  // const contactMeBtn = document.getElementById("contact-me-cta");
-  // contactMeBtn.onclick = function () {
-  //   window.location.assign("./contact.html");
-  // };
-
   // Hide show header action section and scroll to top button on scroll
   const introSection = document.querySelector(".intro-section");
   const actionSection = document.querySelector(".action-section");
