@@ -312,19 +312,6 @@ header > .action-section.transparent {
   cursor: pointer;
 }
 
-/* ===================
-
-/* SECTIONS STYLE 
-
-/* =================== */
-.section-title {
-  width: 100%;
-  /* text-align: left; */
-}
-
-.section-title img {
-  width: min(calc(100vw - 3em), 400px);
-}
 /* =========================
 
 /* Scroll to Top Button

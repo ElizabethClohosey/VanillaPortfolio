@@ -46,7 +46,8 @@
   box-shadow: 0 0px 20px rgba(255, 212, 185, 0.4);
 }
 
-#contact .section-title {
+#contact .section-title img {
+  width: min(calc(100vw - 3em), 400px);
   margin-bottom: var(--lg-space);
 }
 
@@ -100,7 +101,6 @@ textarea {
 }
 
 #char-count {
-  /* font-size: 0.5rem; */
   font-size: calc(10px + 0.5vw);
   transition: color 0.3s, font-size 0.3s; /* Smooth transition for size and color */
 }
