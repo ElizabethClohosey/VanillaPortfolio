@@ -125,10 +125,8 @@ a {
 a:hover {
   color: var(--azure-breeze);
 }
-/* .photo-cred {
-  color: var(--crystal-blue);
-} */
 
-/* .photo-cred:hover {
-  color: var(--azure-breeze);
-} */
+.photo-cred,
+.version {
+  font-size: 10px;
+}
