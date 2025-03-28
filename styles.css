@@ -251,8 +251,14 @@ header > .action-section {
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
-  padding: var(--xl-space) var(--md-space);
+  padding: var(--md-space);
   transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .header > .action-section {
+    padding: var(--xl-space) var(--md-space);
+  }
 }
 
 header > .action-section.transparent {
@@ -269,7 +275,7 @@ header > .action-section.transparent {
   box-shadow: 2px 1px 5px var(--azure-breeze);
   color: var(--azure-breeze);
   margin: var(--lg-space) auto;
-  align-self: start;
+  align-self: center;
   cursor: pointer;
   animation: glow 1.5s infinite ease-in-out; /* Glow animation */
 }
@@ -306,19 +312,6 @@ header > .action-section.transparent {
   cursor: pointer;
 }
 
-/* ===================
-
-/* SECTIONS STYLE 
-
-/* =================== */
-.section-title {
-  width: 100%;
-  /* text-align: left; */
-}
-
-.section-title img {
-  width: min(calc(100vw - 3em), 400px);
-}
 /* =========================
 
 /* Scroll to Top Button

@@ -1,15 +1,12 @@
 #projects {
   position: relative;
   background: var(--dark);
-  /* background-image: url("../assets/images/projects/stars.webp"); */
-  /* background-image: url("../assets/images/stars_test.webp"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   background-position: center;
   padding: var(--lg-space) 0 0;
 }
 
-#projects .section-title {
+#projects .section-title img {
+  width: min(calc(100vw - 3em), 400px);
   margin-bottom: var(--lg-space);
 }
 
@@ -37,12 +34,6 @@
   margin: 0 auto var(--lg-space);
   border-radius: 1.5rem;
   z-index: 10;
-  /* background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 40%
-  ); */
 }
 
 @media screen and (min-width: 580px) {

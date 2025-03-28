@@ -1,26 +1,16 @@
 #about {
-  /* background: #000 url("../assets/images/unfoldTheUniverse.webp") no-repeat
-    center center;
-  backdrop-filter: blur(5px);
-  background-size: cover; */
   padding: var(--lg-space) 0 0;
   background: black;
-  /* overflow-x: hidden; */
 }
 
-#about > * {
-  position: relative; /* Bring content above the blur layer */
-  z-index: 1;
-}
-
-#about .section-title {
+#about .section-title img {
+  width: min(calc(100vw - 3em), 400px);
   margin-bottom: var(--lg-space);
 }
 
 #about .developing,
 .sub-about {
   padding: var(--md-space);
-  /* margin: var(--xl-space) 0 0; */
   margin: 0 0 var(--lg-space);
   border-radius: 0.25rem;
   box-shadow: 0 0 5px var(--peach-light);
@@ -29,12 +19,7 @@
 
 .animated-border {
   position: relative;
-  /* display: inline-block; */
-  /* color: white; */
-  /* font-size: 16px; */
-  /* text-align: center; */
   background-color: black; /* Keep the actual background */
-  /* border-radius: 10px; */
   z-index: 1;
 }
 
