@@ -5,6 +5,7 @@
 @import "./Styles/about.css";
 @import "./Styles/common.css";
 @import "./Styles/contact.css";
+@import "./Styles/photo-credit.css";
 
 :root {
   /* Theme  */
@@ -46,7 +47,8 @@
   --sm-space: 0.25rem;
   --md-space: 0.5rem;
   --lg-space: 1rem;
-  --xl-space: 3rem;
+  --xl-space: 2rem;
+  --xxl-space: 3rem;
 }
 
 ::selection {

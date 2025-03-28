@@ -117,10 +117,18 @@
   color: black;
 }
 
-.photo-cred {
+a {
   color: var(--crystal-blue);
+  font-weight: 800;
 }
 
-.photo-cred:hover {
+a:hover {
   color: var(--azure-breeze);
 }
+/* .photo-cred {
+  color: var(--crystal-blue);
+} */
+
+/* .photo-cred:hover {
+  color: var(--azure-breeze);
+} */
