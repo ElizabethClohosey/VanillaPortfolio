@@ -55,8 +55,10 @@
 .project-card .project-img {
   border-radius: 1.5rem;
   background: black;
-  max-height: 150px;
-  max-width: 150px;
+  height: 150px;
+  width: 150px;
+  min-height: 150px;
+  min-width: 150px;
 }
 
 .project-card:nth-of-type(even) img {
