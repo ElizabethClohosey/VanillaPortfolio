@@ -1,17 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Lazy load backgrounds and parallax
+  // Utility function: Detect mobile/tablet or touch devices.  Lazy load backgrounds and parallax
+  function isTabletOrMobile() {
+    const ua = navigator.userAgent.toLowerCase();
+    console.log(navigator);
+    const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+    const isTabletOrPhone = /android|iphone|ipad|ipod/.test(ua);
+    const isLargeTouchDevice = isTouch && window.innerWidth <= 1366;
+
+    return isTabletOrPhone || isLargeTouchDevice;
+    // return isTabletOrPhone;
+  }
+
+  console.log("Is tablet or mobile", isTabletOrMobile());
+
+  // IntersectionObserver for lazy loading + parallax control
   const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
 
   const lazyObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const section = entry.target;
+
+        // Lazy load background image
         section.style.backgroundImage = `url("${section.dataset.bg}")`;
+
+        // Disable parallax if on tablet/mobile
+        if (isTabletOrMobile()) {
+          section.style.backgroundAttachment = "scroll";
+          section.style.backgroundPosition = "center";
+          section.style.backgroundSize = "cover";
+        }
+
         observer.unobserve(section);
       }
     });
   });
 
+  // Observe all lazy-bg elements
   lazyBackgrounds.forEach((bg) => lazyObserver.observe(bg));
 
   // Hide show header action section and scroll to top button on scroll
