@@ -1,4 +1,5 @@
-.lazy-bg {
+.lazy-bg,
+.main-parallax {
   background-color: #000; /* fallback color */
   background-repeat: no-repeat;
   background-position: center;
@@ -6,7 +7,7 @@
 }
 
 .main-parallax {
-  background-image: url("../assets/images/parallax/plethoraOfCarbonMolecules.webp");
+  /* background-image: url("../assets/images/parallax/plethoraOfCarbonMolecules.webp"); */
   min-height: 300px;
   width: 100%;
   margin: auto;
@@ -14,7 +15,7 @@
   /* box-shadow: 0 0 8px 5px #070604 inset; */
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -27,7 +28,7 @@
   min-height: 300px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -40,24 +41,12 @@
   min-height: 600px;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
-}
-
-@media screen and (max-width: 992px) {
-  .main-parallax,
-  .hobbies-parallax,
-  .end-about-parallax {
-    min-height: 200px;
-    background-attachment: scroll; /* Disable parallax */
-    background-position: center; /* Optional: Fine-tune image position */
-    background-size: cover; /* Stretch image to fill */
-    background-repeat: no-repeat; /* Prevent tiling */
-  }
 }
 
 .fade-in {

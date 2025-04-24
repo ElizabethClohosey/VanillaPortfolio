@@ -1,44 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Utility function: Detect mobile/tablet or touch devices.  Lazy load backgrounds and parallax
+  // Utility function: Detect mobile/tablet or touch devices.  Lazy load backgrounds and parallax, immediate load backgrounds above the fold
   function isTabletOrMobile() {
     const ua = navigator.userAgent.toLowerCase();
-    console.log(navigator);
     const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-
     const isTabletOrPhone = /android|iphone|ipad|ipod/.test(ua);
     const isLargeTouchDevice = isTouch && window.innerWidth <= 1366;
-
     return isTabletOrPhone || isLargeTouchDevice;
-    // return isTabletOrPhone;
   }
 
-  console.log("Is tablet or mobile", isTabletOrMobile());
+  function applyBackground(section) {
+    const bg = section.dataset.bg;
+    if (bg) {
+      section.style.backgroundImage = `url("${bg}")`;
+      section.style.backgroundPosition = "center";
+      section.style.backgroundRepeat = "no-repeat";
+      section.style.backgroundSize = "cover";
 
-  // IntersectionObserver for lazy loading + parallax control
-  const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+      if (isTabletOrMobile()) {
+        section.style.backgroundAttachment = "scroll";
+      } else {
+        section.style.backgroundAttachment = "fixed";
+      }
+    }
+  }
 
+  // Apply immediately for above-the-fold images
+  document.querySelectorAll(".eager-bg").forEach((section) => {
+    applyBackground(section);
+  });
+
+  // Lazy load others when intersecting
   const lazyObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const section = entry.target;
-
-        // Lazy load background image
-        section.style.backgroundImage = `url("${section.dataset.bg}")`;
-
-        // Disable parallax if on tablet/mobile
-        if (isTabletOrMobile()) {
-          section.style.backgroundAttachment = "scroll";
-          section.style.backgroundPosition = "center";
-          section.style.backgroundSize = "cover";
-        }
-
-        observer.unobserve(section);
+        applyBackground(entry.target);
+        observer.unobserve(entry.target);
       }
     });
   });
 
-  // Observe all lazy-bg elements
-  lazyBackgrounds.forEach((bg) => lazyObserver.observe(bg));
+  document.querySelectorAll(".lazy-bg").forEach((bg) => {
+    lazyObserver.observe(bg);
+  });
 
   // Hide show header action section and scroll to top button on scroll
   const introSection = document.querySelector(".intro-section");
