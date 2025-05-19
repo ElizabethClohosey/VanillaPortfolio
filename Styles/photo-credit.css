@@ -10,6 +10,6 @@
 }
 
 .photo-credit .section-title img {
-  width: min(calc(100vw - 3em), 400px);
+  width: min(calc(100vw - 3em), 500px);
   margin-bottom: var(--lg-space);
 }
