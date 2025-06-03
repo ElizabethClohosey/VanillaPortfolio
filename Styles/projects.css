@@ -29,7 +29,7 @@
 }
 
 .project-card {
-  max-width: 400px;
+  /* width: 400px; */
   text-align: center;
   margin: 0 auto var(--lg-space);
   border-radius: 1.5rem;
@@ -45,6 +45,12 @@
 @media screen and (min-width: 580px) {
   #projects > section > .project-card:nth-child(odd) {
     margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-card {
+    width: 500px;
   }
 }
 
