@@ -36,6 +36,13 @@
   background-size: cover;
 }
 
+@media (max-width: 575px) {
+  .main-parallax,
+  .hobbies-parallax {
+    min-height: 150px;
+  }
+}
+
 .end-about-parallax {
   /* background-image: url("../assets/images/parallax/A-vibrant-Aurora-Borealis-2.webp"); */
   min-height: 600px;
@@ -47,6 +54,17 @@
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
+}
+@media (max-width: 768px) {
+  .end-about-parallax {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .end-about-parallax {
+    min-height: 300px;
+  }
 }
 
 .fade-in {
