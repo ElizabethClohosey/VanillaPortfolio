@@ -18,6 +18,7 @@ body {
   line-height: 1.5;
   /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  /* font-family: system-ui, sans-serif; */
   font-family: var(--font-primary), sans-serif;
   font-size: calc(0.8em + 0.3vw);
 }
