@@ -35,16 +35,17 @@ button {
 } */
 
 h1 {
-  font-size: calc(2em + 0.3vw);
+  font-size: calc(3em + 0.3vw);
 }
 
 h2 {
-  font-size: calc(1.5em + 0.3vw);
+  font-size: calc(3em + 0.3vw);
+  /* margin-bottom: var(--md-space); */
 }
 
 h3 {
-  font-size: calc(1em + 0.3vw);
-  margin-bottom: var(--md-space);
+  font-size: calc(1.25em + 0.3vw);
+  /* margin-bottom: var(--md-space); */
 }
 
 h4 {

@@ -20,28 +20,14 @@
   color: black;
 }
 
-.form-wrapper {
-  margin: var(--lg-space) auto;
-  max-width: 1140px;
-  padding: var(--lg-space) var(--md-space) 0;
-  background: var(--dark);
-  border-radius: 0.25rem;
-
-  background: rgb(255, 212, 185);
-  background: linear-gradient(
-    205deg,
-    rgba(255, 212, 185, 0.6) 0%,
-    rgba(0, 0, 0, 0.8) 30%
-  );
-  box-shadow: 0 0px 20px rgba(255, 212, 185, 0.4);
-}
-
 #contact .section-title img {
   width: min(calc(100vw - 3em), 400px);
   margin-bottom: var(--lg-space);
 }
 
-form {
+.contact-section__form {
+  background: black;
+  padding: var(--md-space);
   border-radius: 0.25rem;
   max-width: 420px;
   margin: auto;
@@ -82,6 +68,19 @@ textarea {
   overflow: hidden; /* Hides scrollbar */
   min-height: 100px;
   box-sizing: border-box; /* Includes padding in height calculation */
+}
+
+/* Override browser autofill style   */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: var(--darkThemeText);
+  caret-color: var(--darkThemeText);
 }
 
 .chroma-input label {
