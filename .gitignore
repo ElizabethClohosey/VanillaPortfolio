@@ -3,3 +3,5 @@ CODE-NOTES
 multipage.html
 # *.pdf
 # *.svg
+testing*
+/roadmap-new.html
