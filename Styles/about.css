@@ -19,7 +19,8 @@
 
 .animated-border {
   position: relative;
-  background-color: black; /* Keep the actual background */
+/* Keep the actual background */
+  /* background-color: black;  */
   z-index: 1;
 }
 
