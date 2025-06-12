@@ -34,7 +34,9 @@ Includes a Roadmap to My Madness – a quick page outlining the portfolio roadma
 
 [https://elizabethclohosey.com/roadmap](https://elizabethclohosey/roadmap.com)
 
-### ✅ 🔒 NDA-Friendly Summaries
+### ✅ 🔒 Archived Project Summaries
+
+ **[Archived Project Summaries](ElizabethClohosey.com/archived-project-summaries)**  
 
 Projects under confidentiality agreements are summarized with high-level overviews highlighting role, challenges, and impact.
 
@@ -62,6 +64,20 @@ Consistent design system across all pages, refined spacing, responsive layout, a
 
 ---
 
+## 🔗 Access & Resources
+
+- 🧾 **[Resume (PDF)](ElizabethClohosey.com/skills)**  
+  View my current resume highlighting my experience in software development and radiology informatics.
+
+- 💼 **[LinkedIn Profile](https://www.linkedin.com/in/ElizabethClohosey/)**  
+  Connect with me or explore my professional background.
+
+- 🌐 **[Live Portfolio](https://ElizabethClohosey.com)**  
+  Explore my full-stack portfolio and ongoing projects.
+
+- 📚 **[Archived Project Summaries](ElizabethClohosey.com/archived-project-summaries)**  
+  A collection of summarized work from previous roles and collaborations.
+
 ## 📂 Folder Structure
 
 ```bash
@@ -88,3 +104,4 @@ portfolio/
 │   └── ...
 │   └── ...
 └── README.md
+```
