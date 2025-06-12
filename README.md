@@ -34,7 +34,9 @@ Includes a Roadmap to My Madness – a quick page outlining the portfolio roadma
 
 [https://elizabethclohosey.com/roadmap](https://elizabethclohosey/roadmap.com)
 
-### ✅ 🔒 NDA-Friendly Summaries
+### ✅ 🔒 Archived Project Summaries
+
+ **[Archived Project Summaries](ElizabethClohosey.com/archived-project-summaries)**  
 
 Projects under confidentiality agreements are summarized with high-level overviews highlighting role, challenges, and impact.
 
