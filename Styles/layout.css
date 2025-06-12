@@ -87,7 +87,7 @@ footer {
 }
 
 .section_subsection:not(first-of-type) {
-  margin-bottom: var(--lg-space);
+  margin-bottom: var(--xl-space);
 }
 
 .subsection-title {
