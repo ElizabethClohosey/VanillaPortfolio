@@ -18,6 +18,7 @@ body {
   line-height: 1.5;
   /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  /* font-family: system-ui, sans-serif; */
   font-family: var(--font-primary), sans-serif;
   font-size: calc(0.8em + 0.3vw);
 }
@@ -29,35 +30,4 @@ button {
   cursor: pointer;
 }
 
-/* ul {
-  text-align: left;
-} */
 
-h1 {
-  font-size: calc(2em + 0.3vw);
-}
-
-h2 {
-  font-size: calc(1.5em + 0.3vw);
-}
-
-h3 {
-  font-size: calc(1em + 0.3vw);
-  margin-bottom: var(--md-space);
-}
-
-h4 {
-  font-size: calc(0.9em + 0.3vw);
-}
-
-h5 {
-  font-size: calc(0.8em + 0.3vw);
-}
-
-h6 {
-  font-size: calc(0.7em + 0.3vw);
-}
-
-p {
-  font-size: calc(0.75em + 0.3vw);
-}

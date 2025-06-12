@@ -24,6 +24,13 @@ body.no-scroll {
   min-height: 100vh; /* Full viewport height */
 }
 
+.wrapper.section-single {
+  background-image: url("../assets/images/projects/stars.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -60,4 +67,50 @@ footer {
   height: var(--footer-height, 0px);
   display: block;
   flex-shrink: 0;
+}
+
+.section-container {
+  max-width: 1040px;
+}
+
+.section:not(:only-of-type) {
+  padding: var(--xl-space) var(--sm-space);
+  /* margin: 0 auto; */
+}
+
+.section-title {
+  /* color: var(--peach-light); */
+  color: black;
+  text-shadow: 1px 1px 2px var(--sunset-haze), 0 0 1em var(--peach-light),
+    0 0 0.2em var(--peach-light);
+}
+
+.section-title:not(#test-skills > .section-container > .section-title) {
+  margin-bottom: var(--lg-space);
+}
+
+.section_subsection {
+  padding: var(--md-space);
+}
+
+.section_subsection:not(first-of-type) {
+  margin-bottom: var(--xl-space);
+}
+
+.subsection-title {
+  margin-bottom: var(--lg-space);
+}
+
+.subsection-title span {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-image: radial-gradient(
+    circle at center,
+    var(--crystal-blue),
+    transparent
+  );
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

@@ -144,3 +144,7 @@ a:hover {
 .version {
   font-size: 10px;
 }
+
+hr {
+  margin: var(--lg-space) 0;
+}
