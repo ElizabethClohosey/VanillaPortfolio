@@ -24,6 +24,13 @@ body.no-scroll {
   min-height: 100vh; /* Full viewport height */
 }
 
+.wrapper.section-single {
+  background-image: url("../assets/images/projects/stars.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -87,7 +94,7 @@ footer {
 }
 
 .section_subsection:not(first-of-type) {
-  margin-bottom: var(--lg-space);
+  margin-bottom: var(--xl-space);
 }
 
 .subsection-title {

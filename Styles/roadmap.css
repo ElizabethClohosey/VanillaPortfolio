@@ -1,48 +1,11 @@
-.wrapper.roadmap {
-  background-image: url("../assets/images/projects/stars.webp");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.roadmap-section__subsection {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2px var(--peach-light);
+  border-radius: var(--md-space);
 }
 
-.version-roadmap {
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  /* box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); */
-  min-width: 768px;
-  max-width: 768px;
-  margin: auto;
-  margin-bottom: 2rem;
+.roadmap-section__subsection__info {
+  margin-bottom: var(--lg-space);
 }
 
-.minor {
-  font-size: 0.95rem;
-  /* color: #666; */
-}
 
-.version-roadmap > section {
-  border: 1px solid red;
-  margin-bottom: var(--xl-space);
-  padding: var(--md-space);
-}
-
-.version-roadmap:nth-of-type(even) {
-  background: rgb(224, 187, 248);
-  background: linear-gradient(
-    180deg,
-    rgba(224, 187, 248, 0.3) 0%,
-    rgba(255, 255, 255, 0) 75px
-  );
-  /* box-shadow: 0px 1px 10px var(--luminous-lilac); */
-  box-shadow: 0 0 3px var(--luminous-lilac);
-}
-
-.version-roadmap:nth-of-type(odd) {
-  background: rgb(255, 212, 185);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 212, 185, 0.3) 0%,
-    rgba(255, 255, 255, 0) 75px
-  );
-  box-shadow: 0 0 3px var(--peach-light);
-}
