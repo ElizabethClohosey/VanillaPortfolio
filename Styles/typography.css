@@ -1,0 +1,34 @@
+/* ul {
+  text-align: left;
+} */
+
+h1 {
+  font-size: calc(3em + 0.3vw);
+}
+
+h2 {
+  font-size: calc(3em + 0.3vw);
+  /* margin-bottom: var(--md-space); */
+}
+
+h3 {
+  font-size: calc(1.25em + 0.3vw);
+  /* margin-bottom: var(--md-space); */
+}
+
+h4 {
+  font-size: calc(0.9em + 0.3vw);
+}
+
+h5 {
+  font-size: calc(0.8em + 0.3vw);
+}
+
+h6 {
+  font-size: calc(0.7em + 0.3vw);
+}
+
+p {
+  /* font-size: calc(0.75em + 0.3vw); */
+  margin-bottom: var(--md-space);
+}
