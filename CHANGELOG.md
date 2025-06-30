@@ -43,3 +43,8 @@ This log is primarily intended for personal reference, potential employers, and 
 ## Updated
 - Roadmap page to include link to documentation page
 - Layout styles reorganized; .roadmap-section_subsection style generalized to .section-subsection
+
+## [v1.1.5] - 2025-06-30
+
+### Fixed
+- Corrected oversized logo on large screens by replacing calc() with clamp() and adjusting sizing values for better responsiveness
