@@ -31,3 +31,20 @@ This log is primarily intended for personal reference, potential employers, and 
 ### Added
 - Created initial changelog document for version tracking
 - Added changelog link to roadmap page and footer on all pages
+
+---
+
+## [v1.1.4] - 2025-06-27
+
+## Added 
+- Basic documentation page with links to planning and design files and linked from roadmap page
+- Planning PDF files and wireframe PDFs added to assets
+
+## Updated
+- Roadmap page to include link to documentation page
+- Layout styles reorganized; .roadmap-section_subsection style generalized to .section-subsection
+
+## [v1.1.5] - 2025-06-30
+
+### Fixed
+- Corrected oversized logo on large screens by replacing calc() with clamp() and adjusting sizing values for better responsiveness
