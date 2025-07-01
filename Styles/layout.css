@@ -24,6 +24,13 @@ body.no-scroll {
   min-height: 100vh; /* Full viewport height */
 }
 
+.wrapper::after {
+  content: "";
+  height: var(--footer-height, 0px);
+  display: block;
+  flex-shrink: 0;
+}
+
 .wrapper.section-single {
   background-image: url("../assets/images/projects/stars.webp");
   background-position: center center;
@@ -48,29 +55,8 @@ main {
 .section-container {
   padding: var(--lg-space);
   max-width: 1140px;
+  /* max-width: 1040px; */
   margin: auto;
-}
-
-footer {
-  background: black;
-
-  padding: var(--md-space);
-
-  /* position: sticky; */
-  /* bottom: 0; */
-
-  width: 100%; /* Full-width footer */
-}
-
-.wrapper::after {
-  content: "";
-  height: var(--footer-height, 0px);
-  display: block;
-  flex-shrink: 0;
-}
-
-.section-container {
-  max-width: 1040px;
 }
 
 .section:not(:only-of-type) {
@@ -91,6 +77,9 @@ footer {
 
 .section_subsection {
   padding: var(--md-space);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2px var(--peach-light);
+  border-radius: var(--md-space);
 }
 
 .section_subsection:not(first-of-type) {
@@ -113,4 +102,15 @@ footer {
   background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+footer {
+  background: black;
+
+  padding: var(--md-space);
+
+  /* position: sticky; */
+  /* bottom: 0; */
+
+  width: 100%; /* Full-width footer */
 }

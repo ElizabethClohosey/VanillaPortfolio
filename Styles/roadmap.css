@@ -1,8 +1,8 @@
-.roadmap-section__subsection {
+/* .roadmap-section__subsection {
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 2px var(--peach-light);
   border-radius: var(--md-space);
-}
+} */
 
 .roadmap-section__subsection__info {
   margin-bottom: var(--lg-space);

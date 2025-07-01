@@ -82,7 +82,7 @@ header > .intro-section {
 }
 
 .intro-section > img {
-  width: min(calc(75vw - 6em), 600px);
+  width: clamp(150px, 50vw, 400px);
 }
 
 .intro-section > p {
