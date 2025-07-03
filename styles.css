@@ -180,19 +180,31 @@ header > .intro-section {
 #nav-menu li:nth-child(2) {
   top: 10%;
   right: 20%;
-  animation: float2 5s infinite ease-in-out;
+  animation: float2 5s infinite ease-in-out alternate;
 }
 
 #nav-menu li:nth-child(3) {
-  top: 37%;
+  top: 32%;
   left: 26%;
   animation: float3 6s infinite ease-in-out;
 }
 
 #nav-menu li:nth-child(4) {
-  top: 60%;
+  top: 45%;
   left: 50%;
   animation: float4 6s infinite ease-in-out;
+}
+
+#nav-menu li:nth-child(5) {
+  top: 62%;
+  left: 20%;
+  animation: float1 4s infinite ease-in-out alternate-reverse;
+}
+
+#nav-menu li:nth-child(6) {
+  top: 75%;
+  left: 45%;
+  animation: float2 5s infinite ease-in-out reverse;
 }
 
 /* Floating animations */
