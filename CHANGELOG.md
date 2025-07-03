@@ -58,6 +58,7 @@ This log is primarily intended for personal reference, potential employers, and 
 
 - Replaced outdated documents with current versions: `archived-projects-summaries`, `roadmap-page-fsd`, and `roadmap-page-structure`
 - Updated all instances of **"Archived project summaries"** to **"Archived projects summaries"**, including PDF filename and links
+- Added navigation stalling bug to v2.0.0 Bug Fixes section of roadmap page
 
 ### Removed
 
