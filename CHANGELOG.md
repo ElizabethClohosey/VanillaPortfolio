@@ -12,45 +12,13 @@ This changelog serves as a clear and concise record of updates made to my fronte
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
 
-## [v1.1.2] - 2025-06-16
-
-### Fixed
-
-- Broken project summaries link on resume PDF
-- Missing bullet on page 2 of Archived Project Summaries PDF
+## [v1.1.7] - 2025-07-10
 
 ### Updated
 
-- Replaced resume and archive PDFs with corrected versions
-
-## [v1.1.3] - 2025-06-16
-
-### Fixed
-
-- Prevent Contact Me button from pulsing size; pulse only box-shadow
-
-### Added
-
-- Created initial changelog document for version tracking
-- Added changelog link to roadmap page and footer on all pages
-
-## [v1.1.4] - 2025-06-27
-
-### Added
-
-- Basic documentation page with links to planning and design files and linked from roadmap page
-- Planning PDF files and wireframe PDFs added to assets
-
-### Updated
-
-- Roadmap page to include link to documentation page
-- Layout styles reorganized; .roadmap-section_subsection style generalized to .section-subsection
-
-## [v1.1.5] - 2025-06-30
-
-### Fixed
-
-- Corrected oversized logo on large screens by replacing calc() with clamp() and adjusting sizing values for better responsiveness
+- Updated roadmap section links for improved accuracy and consistency
+- Renamed pdf 'wirframes' folder to 'designs'
+- Renamed PDF files for clarity and consistent naming conventions
 
 ## [v1.1.6] - 2025-07-03
 
@@ -72,10 +40,42 @@ This log is primarily intended for personal reference, potential employers, and 
 
 - Added Documentation and Roadmap links to main navigation dropdown
 
-## [v1.1.7] - 2025-07-10
+## [v1.1.5] - 2025-06-30
+
+### Fixed
+
+- Corrected oversized logo on large screens by replacing calc() with clamp() and adjusting sizing values for better responsiveness
+
+## [v1.1.4] - 2025-06-27
+
+### Added
+
+- Basic documentation page with links to planning and design files and linked from roadmap page
+- Planning PDF files and wireframe PDFs added to assets
 
 ### Updated
 
-- Updated roadmap section links for improved accuracy and consistency
-- Renamed pdf 'wirframes' folder to 'designs' 
-- Renamed PDF files for clarity and consistent naming conventions
+- Roadmap page to include link to documentation page
+- Layout styles reorganized; .roadmap-section_subsection style generalized to .section-subsection
+
+## [v1.1.3] - 2025-06-16
+
+### Fixed
+
+- Prevent Contact Me button from pulsing size; pulse only box-shadow
+
+### Added
+
+- Created initial changelog document for version tracking
+- Added changelog link to roadmap page and footer on all pages
+
+## [v1.1.2] - 2025-06-16
+
+### Fixed
+
+- Broken project summaries link on resume PDF
+- Missing bullet on page 2 of Archived Project Summaries PDF
+
+### Updated
+
+- Replaced resume and archive PDFs with corrected versions
