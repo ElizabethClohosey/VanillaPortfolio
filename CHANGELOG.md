@@ -52,7 +52,7 @@ This log is primarily intended for personal reference, potential employers, and 
 
 - Corrected oversized logo on large screens by replacing calc() with clamp() and adjusting sizing values for better responsiveness
 
-## [v1.1.6] - 2025-06-03
+## [v1.1.6] - 2025-07-03
 
 ### Updated
 
@@ -71,3 +71,11 @@ This log is primarily intended for personal reference, potential employers, and 
 ### Added
 
 - Added Documentation and Roadmap links to main navigation dropdown
+
+## [v1.1.7] - 2025-07-10
+
+### Updated
+
+- Updated roadmap section links for improved accuracy and consistency
+- Renamed pdf 'wirframes' folder to 'designs' 
+- Renamed PDF files for clarity and consistent naming conventions
