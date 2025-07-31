@@ -11,6 +11,9 @@ This changelog serves as a clear and concise record of updates made to my fronte
 - Demonstrating attention to detail and a thoughtful development process
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
+## [v1.1.8] - 2025-07-31
+### Removed
+- Temorarily removed all references to project-docs.html from navigation and roadmap
 
 ## [v1.1.7] - 2025-07-10
 
