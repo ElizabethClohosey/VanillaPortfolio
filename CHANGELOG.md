@@ -12,12 +12,13 @@ This changelog serves as a clear and concise record of updates made to my fronte
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
 ## [v2.0.0] - 2025-XX-XX
-## [v1.1.8] - 2025-07-31
-### Updated
+### Updated (Accessibility Updates)
 - Replaced Skills, Projects and About Me section titles svg images with <h2> and updated section-title style
 
 - Added 'scroll' to top aria-lable to button
 - Changed all "Archived Projects Summaries" links alt attribute to aria label and updated text.  
+
+- Updated skills icons to include role="img" and aria-label
 
 ### Removed
 - Temorarily removed all references to project-docs.html from navigation and roadmap
