@@ -12,6 +12,22 @@ This changelog serves as a clear and concise record of updates made to my fronte
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
 
+## [v2.0.0] - 2025-08-01
+
+### Updated (Accessibility)
+
+- Replaced Skills, Projects, About Me, Contact Me, and Photo Credit title SVG images with semantic heading elements and updated section-title styles
+- Added descriptive `aria-label` to scroll-to-top button
+- Changed all "Archived Projects Summaries" link `alt` attributes to `aria-label` and improved label text for clarity
+- Added `role="img"` and descriptive `aria-label`s to all skills icons for better screen reader support
+- Updated all photo credit sections to use semantic `<figure>` and `<figcaption>` elements
+- Improved `alt` and `aria-label` attributes and added `sr-only` utility class where necessary
+- Added linked images to all photo credit sections for better accessibility and usability
+
+### Removed
+
+- Temorarily removed all references to project-docs.html from navigation and roadmap
+
 ## [v1.1.7] - 2025-07-10
 
 ### Updated
