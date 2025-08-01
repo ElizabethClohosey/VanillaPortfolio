@@ -16,7 +16,10 @@
 
 figure.animated-border img {
   display: block; /* removes default inline gap */
-  max-width: 100%; /* responsive scaling */
+
+  width: 100%; /* responsive scaling */
+  max-width: 300px;
+  margin: auto;
   height: auto; /* keeps aspect ratio */
   border-radius: 4px; /* optional, to soften edges */
 }
