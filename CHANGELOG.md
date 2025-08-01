@@ -16,16 +16,13 @@ This log is primarily intended for personal reference, potential employers, and 
 
 ### Updated (Accessibility)
 
-- Replaced Skills, Projects, and About Me section title SVG images with semantic `<h2>` elements and updated section-title styles
+- Replaced Skills, Projects, About Me, Contact Me, and Photo Credit title SVG images with semantic heading elements and updated section-title styles
 - Added descriptive `aria-label` to scroll-to-top button
 - Changed all "Archived Projects Summaries" link `alt` attributes to `aria-label` and improved label text for clarity
 - Added `role="img"` and descriptive `aria-label`s to all skills icons for better screen reader support
-
-- Replaced Contact Me and Photo Credit title SVG images with semantic heading elements and updated section-title styles
-
-- Replaced Photo Credit title SVG images with semantic heading element and updated section-title styles.
-- Updated all photo credits sections to be more semantic using figure and figcatption elements, alt and aria-label attributes and sr-only utility class where neccessary 
-- Added linked images to all photo credit sections.
+- Updated all photo credit sections to use semantic `<figure>` and `<figcaption>` elements
+- Improved `alt` and `aria-label` attributes and added `sr-only` utility class where necessary
+- Added linked images to all photo credit sections for better accessibility and usability
 
 ### Removed
 
