@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-.photo-credit div.animated-border {
+.photo-credit figure.animated-border {
   margin-bottom: var(--lg-space);
   padding: var(--md-space);
 }
@@ -12,4 +12,18 @@
 .photo-credit .section-title img {
   width: min(calc(100vw - 3em), 500px);
   margin-bottom: var(--lg-space);
+}
+
+figure.animated-border img {
+  display: block; /* removes default inline gap */
+
+  width: 100%; /* responsive scaling */
+  max-width: 300px;
+  margin: auto;
+  height: auto; /* keeps aspect ratio */
+  border-radius: 4px; /* optional, to soften edges */
+}
+
+figure.animated-border img:hover {
+  filter: brightness(1.3);
 }

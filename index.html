@@ -27,7 +27,9 @@
     ></script>
   </head>
   <body>
-    <button id="scrollToTop"><i class="fas fa-solid fa-arrow-up"></i></button>
+    <button id="scrollToTop" arial-label="scroll to top of page">
+      <i class="fas fa-solid fa-arrow-up"></i>
+    </button>
     <div class="wrapper home">
       <!-- <button id="toggle-nav">
         <i class="fas fa-solid fa-bars"></i>
@@ -67,11 +69,11 @@
                   >Roadmap</a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="scroll-link contact-link" href="./project-docs.html"
                   >Documentation</a
                 >
-              </li>
+              </li> -->
             </ul>
           </nav>
         </section>
@@ -126,12 +128,12 @@
         <section id="skills">
           <div class="skills-1">
             <span>
-              <i class="fab fa-brands fa-html5" alt="HTML5 logo"></i>
+              <i class="fab fa-brands fa-html5" alt="HTML5 logo" role="img" aria-label="HTML 5 icon"></i>
             </span>
-            <i class="fab fa-brands fa-css3-alt" alt="CSS3 logo"></i>
-            <i class="fab fa-brands fa-sass" alt="Sass logo"></i>
-            <i class="fab fa-brands fa-bootstrap" alt="Bootstrap logo"></i>
-            <i class="fab fa-brands fa-js"></i>
+            <i class="fab fa-brands fa-css3-alt" alt="CSS3 logo" role="img" aria-label="CSS3 icon"></i>
+            <i class="fab fa-brands fa-sass" alt="Sass logo" role="img" aria-label="Sass icon"></i>
+            <i class="fab fa-brands fa-bootstrap" alt="Bootstrap logo" role="img" aria-label="Bootstrap icon"></i>
+            <i class="fab fa-brands fa-js" role="img" aria-label="Javascript icon"></i>
             <!-- <p>Tailwind CSS</p> -->
             <!-- <p>Typescript</p> -->
             <!-- <p>Redux</p> -->
@@ -139,17 +141,18 @@
           </div>
           <section class="skills-container">
             <div class="skills-title">
-              <img
+              <h1 class="section-title">SKILLS</h1>
+              <!-- <img
                 src="./assets/images/skills.svg"
                 alt="The word 'Skills' spelled out in stylized letters"
-              />
+              /> -->
             </div>
           </section>
 
           <div class="skills-2">
-            <i class="fab fa-brands fa-react" alt="React logo"></i>
-            <i class="fab fa-brands fa-node-js" alt="Node.js logo"></i>
-            <i class="fab fa-brands fa-npm" alt="NPM logo"></i>
+            <i class="fab fa-brands fa-react" alt="React logo" role="img" aria-label="React icon"></i>
+            <i class="fab fa-brands fa-node-js" alt="Node.js logo" role="img" aria-label="Node.js icon"></i>
+            <i class="fab fa-brands fa-npm" alt="NPM logo" role="img" aria-label="NPM icon"></i>
             <!-- <p>Express</p> -->
             <!-- <p>Nest.js</p> -->
             <!-- <p>MongoDB</p> -->
@@ -171,11 +174,12 @@
         >
           <section class="section-container">
             <div class="section-title">
-              <img
+              <h1 class="section-title">PROJECTS</h1>
+              <!-- <img
                 src="./assets/images/projects_2.svg"
                 loading="lazy"
                 alt="The word 'Projects' spelled out in stylized letters."
-              />
+              /> -->
             </div>
 
             <div class="projects-note">
@@ -188,8 +192,8 @@
                 href="./assets/pdf/archived-projects-summaries.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                alt="Open and download archived project summaries PDF"
-                >Archived projects summaries</a
+                aria-label="Archived Projects Summaries, opens in new tab"
+                >Archived Projects Summaries</a
               >
             </div>
             <br />
@@ -589,11 +593,12 @@
           <section class="section-container">
             <!-- <div class="animated-border"> -->
             <div class="section-title">
-              <img
+              <h1 class="section-title">ABOUT ME</h1>
+              <!-- <img
                 loading="lazy"
                 src="./assets/images/about-me_2.svg"
                 alt="The words 'About Me' spelled out in stylized letters."
-              />
+              /> -->
             </div>
             <section class="developing fade-in animated-border">
               <p>
@@ -674,8 +679,8 @@
             href="./assets/pdf/archived-projects-summaries.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            alt="Open and download archived projects summaries PDF"
-            >Archived projects summaries</a
+            aria-label="Archived Projects Summaries, opens in new tab"
+            >Archived Projects Summaries</a
           >
           <br />
           <a
@@ -686,7 +691,7 @@
             alt="Open and download portfolio changelog PDF"
             >Porfolio Changelog</a
           >
-          <p class="version">v1.1.7 - STAGING</p>
+          <p class="version">v2.0.0 - STAGING</p>
         </section>
       </footer>
     </div>
