@@ -12,7 +12,7 @@ This changelog serves as a clear and concise record of updates made to my fronte
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
 
-## [v2.0.0] - 2025-XX-XX
+## [v2.0.0] - 2025-08-01
 
 ### Updated (Accessibility)
 
