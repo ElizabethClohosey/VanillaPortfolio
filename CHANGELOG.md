@@ -20,7 +20,12 @@ This log is primarily intended for personal reference, potential employers, and 
 - Added descriptive `aria-label` to scroll-to-top button
 - Changed all "Archived Projects Summaries" link `alt` attributes to `aria-label` and improved label text for clarity
 - Added `role="img"` and descriptive `aria-label`s to all skills icons for better screen reader support
+
 - Replaced Contact Me and Photo Credit title SVG images with semantic heading elements and updated section-title styles
+
+- Replaced Photo Credit title SVG images with semantic heading element and updated section-title styles.
+- Updated all photo credits sections to be more semantic using figure and figcatption elements, alt and aria-label attributes and sr-only utility class where neccessary 
+- Added linked images to all photo credit sections.
 
 ### Removed
 
