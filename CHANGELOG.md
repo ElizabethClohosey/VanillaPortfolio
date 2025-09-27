@@ -1,4 +1,4 @@
-# Portfolio Change Log
+# Portfolio Changelog
 
 ## Document Purpose
 
