@@ -1,4 +1,4 @@
-# Portfolio Change Log
+# Portfolio Changelog
 
 ## Document Purpose
 
@@ -11,6 +11,12 @@ This changelog serves as a clear and concise record of updates made to my fronte
 - Demonstrating attention to detail and a thoughtful development process
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
+
+## [v2.0.1] - 2025-08-05
+
+### Updated
+
+- Updated resume PDF to latest finalized version
 
 ## [v2.0.0] - 2025-08-01
 
