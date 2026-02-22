@@ -28,11 +28,11 @@ This portfolio serves as a central hub for:
 
 Integrated ChromaCSS, a custom CSS framework delivered via CDN, to streamline styling and reinforce visual consistency and branding across all components. As an ongoing project, the focus remains on accessibility, maintainability, and scalability. The integration also supports faster development through semantic class naming and reduces dependency on third-party CSS libraries.
 
-### ✅ Roadmap Page
+<!-- ### ✅ Roadmap Page
 
 Includes a Roadmap to My Madness – a quick page outlining the portfolio roadmap, goals, and development plans.
 
-[Portfolio Roadmap](https://elizabethclohosey.com/roadmap.html)
+[Portfolio Roadmap](https://elizabethclohosey.com/roadmap.html) -->
 
 ### ✅ 🔒 Archived Project Summaries
 
@@ -40,15 +40,15 @@ Includes a Roadmap to My Madness – a quick page outlining the portfolio roadma
 
 Projects under confidentiality agreements are summarized with high-level overviews highlighting role, challenges, and impact.
 
-### 🎯 Reusable Components (Coming Fall, 2025)
+### 🎯 Reusable Components (Coming Soon)
 
 Modular components are planned for the header, footer, and project cards to ensure consistency and scalability. This update includes a complete redesign of the header, a minimal redesign of the footer, and continued use of the existing project card layout.
 
-### 🎯 Documents Page (Coming Fall, 2025)
+### 🎯 Documents Page (Coming Soon)
 
 Will include specs, design files (Figma), change logs, project summaries, and planning documents to showcase the development process and attention to detail. Also considering the inclusion of original icons and branding assets created in Inkscape, with exported SVG/PNG files to demonstrate basic SVG creation and integration—highlighting a design-to-development workflow.
 
-### 🌱 Accessibility & SEO MVP (Coming Summer, 2025)
+### 🌱 Accessibility & SEO MVP (Coming Soon)
 
 Improved semantic HTML, optimized metadata, image alt text, and link structure to boost accessibility and search visibility.
 
@@ -58,11 +58,11 @@ Consistent design system across all pages, refined spacing, responsive layout, a
 
 ---
 
-## 📄 Roadmap
+<!-- ## 📄 Roadmap
 
 **[Porfolio Roadmap](https://elizabethclohosey/roadmap.html)**
 
----
+--- -->
 
 ## 🔗 Access & Resources
 
