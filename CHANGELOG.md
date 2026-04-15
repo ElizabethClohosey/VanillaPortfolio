@@ -12,6 +12,14 @@ This changelog serves as a clear and concise record of updates made to my fronte
 
 This log is primarily intended for personal reference, potential employers, and collaborators who may review the project’s development history.
 
+## [v2.0.3] - 2025-04-15
+
+### Updated
+
+- Refined About section for improved clarity and flow
+- Aligned messaging to better reflect personal brand and voice
+- Commented out volunteer section
+
 ## [v2.0.2] - 2025-02-22
 
 ### Updated
